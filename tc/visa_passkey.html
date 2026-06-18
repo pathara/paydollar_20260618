@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="tc">
+
+<head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="Website Design Templates">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=390, initial-scale=1.0, maximum-scale=1.0">
+    <title>Visa Payment Passkey：安全、無密碼的生物辨識認證</title>
+    <meta name="description" content="Visa Payment Passkey (VPP) 是一種先進的認證解決方案，以安全且符合 FIDO 標準的生物辨識技術取代傳統密碼和一次性密碼 (OTP)。享受更快速的結帳、更高的轉化率以及防網絡釣魚的數碼支付安全保障。">
+    <meta name="keywords" content="Visa Payment Passkey, VPP, 生物辨識認證, FIDO 標準, 無密碼認證, Visa Token Service, 防網絡釣魚, 數碼支付, 信用卡認證, 安全結帳">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-KQ6BHGL');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Global site tag (gtag.js) - Google Ads: 10882716108 --> 
+	<script src="https://www.googletagmanager.com/gtag/js?id=AW-10882716108" crossorigin="anonymous"></script> 
+	<script>
+			window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10882716108');
+	</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '338242285739795');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=338242285739795&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+	<!-- Showcase a logo on the Search Engine Ranking page -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"url": "https://www.paydollar.com",
+		"logo": "https://www.paydollar.com/asset/img/logo/paydollar-logo.png"
+	 }
+	</script>
+	<!-- For Canonicalization: To let Google chose as the most representative from a set of duplicate pages -->
+	<link rel="canonical" href="https://www.paydollar.com/tc/tokenization.html" />
+	<link rel="alternate" hreflang="zh-tw" href="https://www.paydollar.com.tw/refund-protect.html" />
+	<!-- End Canonicalization -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../asset/img/logo/favicon.png">
+    <link rel="apple-touch-icon" href="../asset/img/logo/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../asset/img/logo/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../asset/img/logo/apple-touch-icon-114x114.png">
+
+    <!-- plugins -->
+    <link rel="stylesheet" href="../asset/css/plugins.css">
+    
+    <!-- Bootstrap CSS (Fallback for Preview) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- search css -->
+    <link rel="stylesheet" href="../asset/search/search.css">
+
+    <!-- quform css -->
+    <link rel="stylesheet" href="../asset/quform/css/base.css">
+
+    <!-- theme core css -->
+    <link rel="stylesheet" href="../asset/css/styles.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../asset/css/custom.css">
+        
+    <!-- vertical_menu -->
+    <link rel="stylesheet" href="../asset/css/vertical_menu.css">
+	<link rel="stylesheet" href="../asset/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="../asset/owl/owl.theme.default.min.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<style>
+		.item img {border:2px solid #fff; border-radius:10px;}
+		.fadeOut  {
+			  -webkit-animation-name : fadeOut  ;
+			  animation-name : fadeOut ;
+			}  
+			@-webkit-keyframes  fadeOut  {
+			  0% {
+				opacity : 1   ;
+			  }  
+			  100% {
+				opacity : 0   ;
+			  }  
+			}
+			@keyframes  fadeOut  {
+			  0% {
+				opacity : 1   ;
+			  }  
+			  100% {
+				opacity : 0   ;
+			  }  
+			}
+	</style>
+	
+
+
+<script>
+	jQuery(".dropdown-item").on("click", function() {
+	jQuery(this).attr("aria-selected", "true");
+	jQuery(this).addClass("active");
+	jQuery(".dropdown-item").not(this).attr("aria-selected", "false");
+	jQuery(".dropdown-item").not(this).removeClass("active");
+})
+</script>
+<!--Allow Mutiple Modals in 1 page-->
+<script>
+	var within_first_modal = false;
+$('.btn-second-modal').on('click', function() {
+  if ($(this).hasClass('within-first-modal')) {
+    within_first_modal = true;
+    $('#first-modal').modal('hide');
+  }
+  $('#second-modal').modal('show');
+});
+
+$('.btn-second-modal-close').on('click', function() {
+  $('#second-modal').modal('hide');
+  if (within_first_modal) {
+    $('#first-modal').modal('show');
+    within_first_modal = false;
+  }
+});
+
+$('.btn-toggle-fade').on('click', function() {
+  if ($('.modal').hasClass('fade')) {
+    $('.modal').removeClass('fade');
+    $(this).removeClass('btn-success');
+  } else {
+    $('.modal').addClass('fade');
+    $(this).addClass('btn-success');
+  }
+});
+</script>
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ6BHGL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- PAGE LOADING
+    ================================================== -->
+    <div id="preloader"></div>
+
+    <!-- MAIN WRAPPER
+    ================================================== -->
+    <div class="main-wrapper">
+
+        <!-- HEADER
+        ================================================== -->
+         <header class="header-style2" style="z-index:99!important;">
+		
+	  	<div class="top-bar">
+                <div class="container px-lg-1-6 px-xl-2-5 px-xxl-2-9 py-1 mb-0">
+                    <div class="row pb-0 mb-0">
+                        <div class="col-12  pb-0 mb-0">
+							<ul class="top-social-icon ps-0 pb-0 mb-0">
+								
+								<li><button class="btn btn-light btn-link"  type="button" onclick="openInNewTab('https://www.paydollar.com/tchi/pdsoho_genpaystart_tc.html');">繳費站</button></li>
+								<li class="border-start pe-0">
+									<div class="dropdown d-grid">
+										<button class="btn btn-light2 btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">登入</button>
+										<ul class="dropdown-menu">
+											<li><a rel="noopener noreferrer" class="dropdown-item" href="https://admin.paydollar.com/b2c2/chi/merchant/index.jsp" target="_blank">商戶平台</a></li>
+											<li><a rel="noopener noreferrer" class="dropdown-item" href="https://admin.paydollar.com/b2c2/eng/reseller/index.jsp" target="_blank">分銷商平台</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="border-start"><button class="btn btn-light btn-link"  onclick="window.location.href='../en/visa_passkey.html';"  type="button">English</button></li>
+							</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-default border-bottom">
+                
+				<div class="container px-lg-1-6 px-xl-2-5 px-xxl-2-9">
+					
+					<div class="row align-items-center">
+                        <div class="col-12 col-lg-12">
+                            <div class="menu_area alt-font">
+                                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                                    <div class="navbar-header navbar-header-custom">
+                                        <!-- start logo -->
+                                        <a rel="noopener noreferrer" href="../index.html" class="navbar-brand logodefault"><img id="logo" src="../asset/img/logo/paydollar.svg" alt="PayDollar Logo"/></a>
+                                        <!-- end logo -->
+                                    </div>
+                                    
+									<!-- VERTICAL MENU // SHOW ONLY IN MOBILE/ TABLET -->
+                                    <div class="navbar-toggler bg-primary">
+										<div id="nav-container_ver">
+											<div class="button_ver" tabindex="0">
+												<span class="icon-bar_ver"></span>
+												<span class="icon-bar_ver"></span>
+												<span class="icon-bar_ver"></span>
+											</div>
+
+											<div id="nav-content_ver" tabindex="0">
+												<div class="sidenav" >
+													<a href="#contact" class="dropdown-btn" style="padding-top: 30px;">產品及服務 <i class="fa fa-caret-down"></i></a>
+													<div class="dropdown-container">
+														<a rel="noopener noreferrer" href="online-payments.html">網上支付</a>
+														<a rel="noopener noreferrer" href="retail-payments.html">零售支付</a>
+														<a rel="noopener noreferrer" href="value-added-services.html">增值服務及方案</a>
+														<a rel="noopener noreferrer" href="ecommerce-partners.html">電子商務平台合作夥伴</a>
+														<a rel="noopener noreferrer" href="merchant-admin-portal.html" style="padding-bottom: 30px;">商戶管理平台</a>
+													</div>
+
+													<a rel="noopener noreferrer" href="industries.html">服務行業</a>
+													<a rel="noopener noreferrer" href="resources.html">下載</a>
+													<a href="#contact" class="dropdown-btn">關於我們<i class="fa fa-caret-down"></i></a>
+													<div class="dropdown-container">
+														<a rel="noopener noreferrer" href="about-us.html">關於傳款易 (PayDollar)</a>
+														<a rel="noopener noreferrer" href="contact-us.html">聯絡我們</a>
+														<a rel="noopener noreferrer" href="faq.html" style="padding-bottom: 30px;">常見問題</a>
+													</div>
+													<a rel="noopener noreferrer" href="get-started.html" class="bg-APYellow fc-white">立即登記!</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+                                    <!-- start menu area -->
+                                    <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
+										<li>
+                                            <a rel="noopener noreferrer" href="#!">產品及服務</a>
+                                            <ul class="row megamenu">
+                                                <li class="col-lg-3 d-none d-lg-block" style="border-right:1px solid #c1c1c1;">
+                                                    <span class="mb-0 d-block p-lg-0 px-4 px-lg-0 text-uppercase sub-title  display-30">
+														<font class="fs-14 fc-blk font-weight-700">產品及服務</font>
+													</span>
+                                                    <p class="fc-grey fs-12">
+														透過 PayDollar 電子支付平台輕鬆接受 17 個市場的電子支付，支援多種支付方式、多貨幣、多渠道、多語言和多收單機構
+													</p>
+                                                </li>
+                                                <li class="col-lg-4">
+                                                    <a rel="noopener noreferrer" href="online-payments.html" class="fc-ap-blue fs-13 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">網上支付</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">透過您的網站或行動應用程式接受付款</p>
+													
+													<a rel="noopener noreferrer" href="retail-payments.html" class="fc-ap-blue fs-13 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">零售付款</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">透過 AppPay，於可以在智慧型行動裝置或智能移動終端接受零售支付</p>
+													
+                                                </li>
+                                                 <li class="col-lg-5">
+                                                    <a rel="noopener noreferrer" href="value-added-services.html" class="fc-ap-blue fs-13 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">增值服務及方案</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">為迎合不斷變更的市況及客戶需求而開發，助您加強在市場上的競爭力同時縮減營運成本</p>
+													
+													<a rel="noopener noreferrer" href="ecommerce-partners.html" class="fc-ap-blue fs-13 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">電子商務平台合作夥伴</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">我們已與當今最流行的電子商務平台建立合作夥伴關係，這意味著您可以獲得一個更大的潛在客戶網絡，有助於增加品牌曝光度，吸引更多的流量，提高銷售</p>
+													
+													<a rel="noopener noreferrer" href="merchant-admin-portal.html" class="fc-ap-blue fs-13 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">商戶管理平台</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">有效管理所有銷售交易、分析數據、下載報表、制定風險管理策略</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+										
+										<li>
+                                            <a rel="noopener noreferrer" href="industries.html">服務行業</a>
+                                        </li>
+										<li>
+                                            <a rel="noopener noreferrer" href="resources.html">下載</a>
+                                        </li>
+										<li>
+                                            <a rel="noopener noreferrer" href="#!">關於我們</a>
+                                            <ul class="row megamenu">
+                                                <li class="col-lg-4 d-none d-lg-block" style="border-right:1px solid #c1c1c1;">
+                                                    <span class="mb-0 d-block p-lg-0 px-4 px-lg-0 text-uppercase sub-title  display-30">
+														<font class="fs-14 fc-blk font-weight-700">關於我們</font>
+													</span>
+                                                    <p class="fc-grey fs-12">
+														PayDollar 一站式的支付平台，伴您邁向未來、創新商機
+													</p>
+                                                </li>
+                                                <li class="col-lg-8">
+                                                    <a rel="noopener noreferrer" href="about-us.html" class="fc-ap-blue fs-14 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">關於 PayDollar </a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">了解更多關於我們的品牌理念</p>
+													
+													<a rel="noopener noreferrer" href="contact-us.html" class="fc-ap-blue fs-14 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">聯絡我們</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">任何查詢歡迎隨時聯絡我們</p>
+													
+													<a rel="noopener noreferrer" href="faq.html" class="fc-ap-blue fs-14 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">常見問題</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">立即解答一般常見問題</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+										
+										
+                                   </ul>
+									<!-- end menu area -->
+
+                                   <!-- start attribute navigation -->
+									 <div class="attr-nav align-items-xl-center ms-xl-auto main-font">
+                                        <ul>
+                                            <li class="d-none d-xl-inline-block">
+												<a rel="noopener noreferrer" href="get-started.html" class="btn-style3 special-offer"><span>立即登記</span></a>
+											</li>
+                                        </ul>
+                                    </div>
+                                    <!-- end attribute navigation -->
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+		<section class="m-0 p-0 bg-img cover-background" style="background-color:#fff; background-position:top left !important; background-size:100% auto !important; margin-top: 0px !important; background-image:url('../asset/img/bg/bg-vas.webp');">
+        <div class="container" style="padding:50px 20px;">
+            <div class="py-4">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-6 col-md-12 align-middle">
+                        <p class="ff-poppins-medium">加值服務 &gt; <font>Visa Passkey </font>
+                        </p>
+                        <p class="h1 display-26 display-sm-20 display-lg-20 display-xl-16 mb-2-9 fc-ap-blue mb-0 ff-poppins-bold fc-ap-blue" style="font-weight:normal;">
+                          Visa  Passkey 
+                      </p>
+                        <font class="fs-20 ff-poppins-bold" style="line-height:normal !important;">
+                        為數碼支付提供更快捷、更安全且更具包容性的認證體驗
+                    </font>
+                    </div>
+
+                    <div class="col-xl-5 col-lg-6 col-md-12">
+                        <img src="../asset/img/service/visa_passkey.png" border="0" style="border-radius:20px; border:5px solid #fff; max-width:90%;">
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+            <h3><strong>Visa Payment Passkey 簡介</strong></h4>
+            <p class="font-weight-400;">
+              <strong> Visa Payment Passkey (VPP)&nbsp;</strong> 是一種先進的支付通行密鑰,讓線上刷卡可透過臉部或指紋辨識快速驗證身分，取代傳統密碼及一次性密碼 (OTP)。VPP 基於 FIDO (Fast Identity Online) 國際標準構建，讓 <strong>Visa 持卡人</strong>能利用裝置的內置功能——如<strong>面容 ID (Face ID)、指紋掃描或裝置密碼——</strong>完成付款認證。</p>
+            <p class="font-weight-400;">為數碼支付提供<strong>更快捷、更安全且更具包容性的認證體驗</strong>。透過 Passkey 的<strong>一次性註冊</strong>，消費者即可享受到<strong>流暢的認證流程</strong>，無需再手動輸入密碼，或苦候可能被延誤甚至截取的 <strong>SMS </strong>驗證碼，有效消除交易障礙。</p>
+            <p class="font-weight-400;">Visa Payment Passkey 是針對「無卡交易」(CNP) 認證的次世代方案，提供具備<strong>防網絡釣魚 (Phishing-resistant) </strong>特性的替代方案，在顯著提升安全性的同時，優化結帳體驗。</p>
+            
+            <!-- ====== IMPROVED CORE FEATURES SECTION ====== -->
+            <div class="row mt-5 pt-4">
+                
+				<div class="col-12 text-center mb-0">
+                    <h3 class="fw-bold"><span class="fs-2 me-2">✨</span>核心功能</h3>
+					<p>Visa Payment Passkey 設計靈活，能於整個數碼支付生態系統中無縫運作。</p>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm p-4" style="border-radius: 20px; background: linear-gradient(to bottom right, #ffffff, #f8f9fa);">
+                        <div class="card-body text-start">
+                            <div class="d-flex align-items-center mb-4 pb-3 border-bottom">
+                                <div class="me-3 fs-1 text-primary"><i class="fas fa-cog"></i></div>
+                                <h4 class="card-title fw-bold mb-0 text-dark">與 Visa 支付架構深度整合</h4>
+                            </div>
+                            <p class="mb-4 text-muted">Visa Payment Passkey 已與 Visa 現有的支付基礎設施深度結合：</p>
+                            
+                            <div class="d-flex mb-4 align-items-start">
+                                <div class="me-3 fs-3">🔐</div>
+                                <div>
+                                    <strong class="d-block mb-1 fs-5">代碼化技術 (Tokenization)</strong>
+                                    <p class="mb-0 fs-6 text-muted">Passkey 框架結合了 <strong>Visa Token Service (VTS)</strong> 與綁定至消費者裝置的 FIDO 認證。這種雙重保障在提升安全性的同時，亦確保交易順暢無阻。</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4 align-items-start">
+                                <div class="me-3 fs-3">👆</div>
+                                <div>
+                                    <strong class="d-block mb-1 fs-5">Click to Pay 整合</strong>
+                                    <p class="mb-0 fs-6 text-muted">於所有參與商戶提供<strong>一致</strong>的結帳體驗。</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <div class="me-3 fs-3">👤</div>
+                                <div>
+                                    <strong class="d-block mb-1 fs-5">訪客結帳 (Guest Checkout)</strong>
+                                    <p class="mb-0 fs-6 text-muted">此方案配合 <strong>VPP Direct </strong>及 <strong>Cardinal Consumer Authentication</strong>，讓訪客無需建立完整帳戶，即可使用 Passkey 進行結帳。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm p-4" style="border-radius: 20px; background: linear-gradient(to bottom right, #ffffff, #f8f9fa);">
+                        <div class="card-body text-start">
+                            <div class="d-flex align-items-center mb-4 pb-3 border-bottom">
+                                <div class="me-3 fs-1 text-info"><i class="fas fa-globe"></i></div>
+                                <h4 class="card-title fw-bold mb-0 text-dark">支援各類型交易</h4>
+                            </div>
+                            <p class="mb-4 text-muted">Visa Payment Passkey 支援以下各項認證：</p>
+                            
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="p-3 rounded h-100 d-flex align-items-center border bg-white shadow-sm transition-hover">
+                                        <span class="fs-3 me-3">💳</span>
+                                        <span class="fw-bold text-dark">信用卡及扣賬卡 (Debit Card) 交易</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="p-3 rounded h-100 d-flex align-items-center border bg-white shadow-sm transition-hover">
+                                        <span class="fs-3 me-3">🛍️</span>
+                                        <span class="fw-bold text-dark">於參與計劃的網上商戶進行電商購物</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="p-3 rounded h-100 d-flex align-items-center border bg-white shadow-sm transition-hover">
+                                        <span class="fs-3 me-3">📱</span>
+                                        <span class="fw-bold text-dark">應用程式內 (In-app) 付款及數碼錢包交易</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="p-3 rounded h-100 d-flex align-items-center border bg-white shadow-sm transition-hover">
+                                        <span class="fs-3 me-3">🔄</span>
+                                        <span class="fw-bold text-dark">定期付款及自動續期付款（結合 Card Account Updater 服務時）</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 p-3 rounded text-center border d-flex align-items-center justify-content-center" style="background-color: #f0f8ff; border-color: #cce5ff !important;">
+                                <span class="fs-3 me-3">
+                                    <i class="fab fa-apple me-2"></i>
+                                    <i class="fab fa-android"></i>
+                                </span>
+                                <strong class="fs-5" style="color: #0056b3;">同時支援 iOS 及 Android 裝置</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ====== END IMPROVED CORE FEATURES SECTION ====== -->
+
+            <!-- BENEFITS SECTION -->
+            <div class="row mt-5">
+    <div class="col-12 text-center">
+        <h2 class="fw-bold">更多優勢：商戶獲益</h2>
+		<p>Visa Payment Passkey 為尋求<strong>優化購物結帳流程</strong>的商戶帶來競爭優勢：</p>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm p-3" style="border-radius: 20px; background: linear-gradient(to bottom right, #ffffff, #f8f9fa);">
+            <div class="card-body text-center">
+                <img src="../asset/img/visapasskey/conversion_rate.gif" width="84" alt="Conversion Rate" class="mb-3">
+                <h5 class="card-title fw-bold">提升轉化率</h5>
+                <p class="">減少由 OTP 認證帶來的摩擦，從而降低交易失敗率及棄購物車率。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm p-3" style="border-radius: 20px; background: linear-gradient(to bottom right, #ffffff, #f8f9fa);">
+            <div class="card-body text-center">
+                <img src="../asset/img/visapasskey/fast_checkout.gif" width="84" alt="Fast Checkout" class="mb-3">
+                <h5 class="card-title fw-bold">縮短結帳時間</h5>
+                <p class="">Passkey 能大幅縮短結帳所需時間，提升客戶滿意度及忠誠度。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm p-3" style="border-radius: 20px; background: linear-gradient(to bottom right, #ffffff, #f8f9fa);">
+            <div class="card-body text-center">
+                <img src="../asset/img/visapasskey/fraud_reduction.gif" width="84" alt="Fraud Reduction" class="mb-3">
+                <h5 class="card-title fw-bold">降低欺詐風險</h5>
+                <p class="">Passkey 具備天然的防釣魚特性。與可能透過社交工程手段被盜取的 OTP 不同，Passkey 使用儲存於用戶裝置本地的加密密鑰。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="row mt-4">
+    <div class="col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm p-3" style="border-radius: 20px; background: linear-gradient(to bottom right, #ffffff, #f8f9fa);">
+            <div class="card-body text-center">
+                <img src="../asset/img/visapasskey/integration.gif" width="84" alt="Integration" class="mb-3">
+                <h5 class="card-title fw-bold">整合程序簡便</h5>
+                <p class="">商戶可透過現有的付款服務供應商 (PSP) 啟用 Passkey 功能，無需重新構建複雜的基礎設施。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm p-3" style="border-radius: 20px; background: linear-gradient(to bottom right, #ffffff, #f8f9fa);">
+            <div class="card-body text-center">
+                <img src="../asset/img/visapasskey/authentication.gif" width="84" alt="Authentication" class="mb-3">
+                <h5 class="card-title fw-bold">合乎認證計劃資格</h5>
+                <p class="">透過實施 Passkey 認證，商戶可能符合 Visa 認證計劃的資格，有助於降低承擔責任並優化交換費 (Interchange Cost) 成本。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="text-center mt-5 py-5 px-3 ">
+                <h3 class="fw-bold text-dark mb-3">🚀 立即申請整合 Visa Payment Passkey</h3>
+                <p class="fs-5 text-muted mb-4">為您的客戶帶來流暢結帳體驗，顯著提升您的銷售額！</p>
+                <a href="contact-us.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow">聯絡我們了解更多</a>
+            </div>
+        </div>
+        </div>
+    </section>
+		
+		 
+
+
+		<!-- FOOTER
+        ================================================== -->
+        <footer class="position-relative pt-1-9 loadanimate">
+            <div class="container">
+                <div class="row mt-n5 pb-6 pb-xxl-10">
+                    <div class="col-md-6 col-lg-4 mt-5">
+                        <h3 class="text-white fs-12 mb-1-9">關於PayDollar</h3>
+                        <ul class="footer-link list-unstyled">
+							<li class="text-white mb-3 fs-12 opacity6">
+								PayDollar 是聯款通有限公司全資擁有和營運的一站式電子支付平台，支持商戶接受國際上主要流動的支付方式。憑藉 20多年的處理電子支付的專業知識和技術，我們致力於幫助企業數碼轉型、克服當中技術上挑戰、簡化電子支付流程、優化購買經驗、擴闊銷售渠道，並同時提供反欺詐和安全機制，幫助防止詐騙交易，保護商家的利益。
+							 </li>
+						</ul>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-5">
+                        <div class="ps-0">
+                            <h3 class="text-white h6 mb-1-9">聯絡我們</h3>
+                            <ul class="footer-link list-unstyled">
+                                <li class="text-white mb-3 fs-12 opacity6">
+                                   實現您所想，請立即聯絡我們
+                                </li>
+                                <li class="text-white mb-3 fs-12">
+                                    <strong>電郵:</strong> <a rel="noopener noreferrer" class="link-white" href="/cdn-cgi/l/email-protection#c2b1a3aea7b182b2a3bba6adaeaea3b0eca1adaf"><span class="__cf_email__" data-cfemail="a0d3c1ccc5d3e0d0c1d9c4cfccccc1d28ec3cfcd">[email&#160;protected]</span></a>
+                                </li>
+                                <li class="text-white fs-12">
+                                    <strong>電話:</strong> <a rel="noopener noreferrer" class="link-white" href="tel:852 2538 8278">+852 2538 8278</a>
+                                </li>
+                            </ul>
+							<ul class="social-icon-style1">
+								<li>
+									<a rel="noopener noreferrer" class="rounded-2" href="https://www.facebook.com/paydollarofficial/" target="_blank"><img src="../asset/img/icon/facebook.svg"></a>
+								</li>
+								<li>
+									<a rel="noopener noreferrer" class="rounded-2" href="https://www.linkedin.com/showcase/paydollar-global?trk=affiliated-pages" target="_blank"><img src="../asset/img/icon/linkedin.svg"></a>
+								</li>
+								<li>
+									<a rel="noopener noreferrer" class="rounded-2" href="https://www.youtube.com/channel/UCThpVgcEseBDUuPeggXbVAw" target="_blank"><img src="../asset/img/icon/youtube.svg"></a>
+								</li>
+								<!--<li>
+									<a rel="noopener noreferrer" class="rounded-2" href="https://wa.me/60321618188" target="_blank"><img src="../asset/img/icon/whatsapp.svg"></a>
+								</li>-->
+							</ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-5">
+                        <div class="">
+                            <div class="text-white h6 mb-1-6">已經是我們的客戶或分銷商？</div>
+							<div class="dropdown mb-4 d-grid">
+								<button class="btn btn-secondary dropdown-toggle btn-country text-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								登入
+								</button>
+								<ul class="dropdown-menu">
+									<li><a rel="noopener noreferrer" class="dropdown-item" href="https://admin.paydollar.com/b2c2/chi/merchant/index.jsp" target="_blank">商戶平台</a></li>
+									<li><a rel="noopener noreferrer" class="dropdown-item" href="https://admin.paydollar.com/b2c2/eng/reseller/index.jsp" target="_blank">分銷商平台</a></li>
+								</ul>
+							</div>
+							<div class="d-grid">
+								<button class="btn btn-secondary btn-country text-start" onclick="openInNewTab('https://www.paydollar.com/tchi/pdsoho_genpaystart_tc.html');" type="button">繳費站</button>
+							</div>
+							<div class="d-grid mt-4">
+								<button class="btn btn-secondary btn-country text-start" onclick="window.location.href='../en/tokenization.html'" type="button">English</button>
+							</div>
+						</div>
+						
+                    </div>
+                </div>
+            </div>
+            
+			<div class="py-4 border-top border-color-light-white">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+							<p class="my-0">
+								<a rel="noopener noreferrer" class="link-light fs-11" href="terms-of-use.html">使用條款</a><font class="text-white opacity5">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+								<a rel="noopener noreferrer" class="link-light fs-11" href="privacy-policy.html">隱私權政策</a><font class=" text-white opacity5">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+								<a rel="noopener noreferrer" class="link-light fs-11" href="security-policy.html">安全策略</a>
+							</p>
+                            <p class="d-inline-block text-white mb-0 mt-0 p-0 fs-10 opacity6">&copy; <span class="current-year"></span> AsiaPay Limited</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- SCROLL TO TOP
+    ================================================== -->
+    <!--<a href="#!" class="scroll-to-top rounded-3"><i aria-hidden="true"><img src="../asset/img/icon/top.svg"></i></a>-->
+
+    <!-- all js include start -->
+
+    <!-- jQuery -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../asset/js/jquery.min.js"></script>
+
+    <!-- popper js -->
+    <script src="../asset/js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../asset/js/bootstrap.min.js"></script>
+
+    <!-- navigation -->
+    <script src="../asset/js/nav-menu.js"></script>
+
+    <!-- owl carousel-->
+    <script src="../asset/js/owl.carousel.js"></script> 
+
+    <!-- jquery.counterup.min -->
+    <script src="../asset/js/jquery.counterup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="../asset/js/jquery.stellar.min.js"></script>
+
+    <!-- easy.responsive.tabs js -->
+    <script src="../asset/js/easy.responsive.tabs.js"></script>
+
+    <!-- waypoints js -->
+    <script src="../asset/js/waypoints.min.js"></script>
+
+    <!-- countdown js -->
+    <script src="../asset/js/countdown.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="../asset/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- lightgallery js -->
+    <script src="../asset/js/lightgallery-all.js"></script>
+
+    <!-- mousewheel js -->
+    <script src="../asset/js/jquery.mousewheel.min.js"></script>
+
+    <!--  clipboard js -->
+    <script src="../asset/js/clipboard.min.js"></script>
+
+    <!--  prism js -->
+    <script src="../asset/js/prism.js"></script>
+
+    <!-- custom scripts -->
+    <script src="../asset/js/main.js"></script>
+
+	<!-- additional scripts -->
+    <script src="../asset/js/custom.js"></script>
+	
+	<!-- owl index scripts  -->
+	<script src="../asset/owl/jquery-3.6.0.min.js"></script>
+    <script src="../asset/owl/owl.carousel.min.js"></script>
+    <script src="../asset/owl/script-content.js"></script>
+
+
+
+
+    <!-- all js include end -->
+
+<script>
+  // Function to check the URL parameters and open the specified modal
+  function openModalFromURLParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const openModal = urlParams.get('openModal');
+
+    if (openModal) {
+      var modal = new bootstrap.Modal(document.getElementById(openModal));
+      modal.show();
+    }
+  }
+
+  // Call the function on page load
+  window.onload = openModalFromURLParams;
+</script>
+<script>
+        $(".owl-carousel").owlCarousel({
+  loop: true,
+  nav: true,
+  dots: true,
+  items: 1
+});
+
+var owlCarousel = $('.owl-carousel').data('owl.carousel');
+owlCarousel.remove(1);
+    </script>
+	
+
+<script>includeHTML();</script></body>
+</html>
