@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="tc">
+
+<head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="AsiaPay Limited">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=390, initial-scale=1.0, maximum-scale=1.0">
+	<title>VoicePay：安全、非接觸式的語音支付解決方案 | PayDollar</title>
+<meta name="description" content="AsiaPay VoicePay 利用語音識別技術實現安全、非接觸式交易。體驗零代碼啟用和多錢包支援，實現無縫、免提的結帳。">
+<meta name="keywords" content="VoicePay, 語音支付, 語音結帳, 非接觸式支付, 數位錢包, 電子錢包整合, 零代碼支付, AsiaPay">
+<meta name="robots" content="index, follow">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-KQ6BHGL');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Global site tag (gtag.js) - Google Ads: 10882716108 --> 
+	<script src="https://www.googletagmanager.com/gtag/js?id=AW-10882716108" xintegrity="sha512-/EsyrHWkAvzYCzPrLpKehzhxJzwzJVPaEB/L/W1D+exE//F87kSBn1rJCGRlZZZdQmzN27pRhjmJY7PbrjXWUw==" crossorigin="anonymous"></script> 
+	<script>
+			window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10882716108');
+	</script>
+	
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '338242285739795');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=338242285739795&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+	<!-- Showcase a logo on the Search Engine Ranking page -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"url": "https://www.paydollar.com",
+		"logo": "https://www.paydollar.com/asset/img/logo/paydollar-logo.png"
+	 }
+	</script>
+	<!-- For Canonicalization: To let Google chose as the most representative from a set of duplicate pages -->
+	<link rel="canonical" href="https://www.paydollar.com/tc/voicepay.html" />
+	<!-- End Canonicalization -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../asset/img/logo/favicon.png">
+    <link rel="apple-touch-icon" href="../asset/img/logo/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../asset/img/logo/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../asset/img/logo/apple-touch-icon-114x114.png">
+
+    <!-- plugins -->
+    <link rel="stylesheet" href="../asset/css/plugins.css">
+    
+    <!-- Bootstrap CSS (Fallback for Preview) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- search css -->
+    <link rel="stylesheet" href="../asset/search/search.css">
+
+    <!-- quform css -->
+    <link rel="stylesheet" href="../asset/quform/css/base.css">
+
+    <!-- theme core css -->
+    <link rel="stylesheet" href="../asset/css/styles.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../asset/css/custom.css">
+        
+    <!-- vertical_menu -->
+    <link rel="stylesheet" href="../asset/css/vertical_menu.css">
+	<link rel="stylesheet" href="../asset/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="../asset/owl/owl.theme.default.min.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<style>
+		.item img {border:2px solid #fff; border-radius:10px;}
+		.fadeOut  {
+			  -webkit-animation-name : fadeOut  ;
+			  animation-name : fadeOut ;
+			}  
+			@-webkit-keyframes  fadeOut  {
+			  0% {
+				opacity : 1   ;
+			  }  
+			  100% {
+				opacity : 0   ;
+			  }  
+			}
+			@keyframes  fadeOut  {
+			  0% {
+				opacity : 1   ;
+			  }  
+			  100% {
+				opacity : 0   ;
+			  }  
+			}
+        .step-icon {
+            width: 72px;
+            height: 72px;
+            background-color: #002e5b;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin: 0 auto 15px;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+            border: 4px solid #fff;
+        }
+        .infographic-step { position: relative; z-index: 1; }
+        .infographic-step:not(:last-child)::after {
+            content: ''; position: absolute; top: 36px; right: -50%; width: 100%; height: 4px; background: #e9ecef; z-index: -1;
+        }
+        @media (max-width: 767px) { .infographic-step::after { display: none; } }
+        
+        .feature-card { transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 20px; }
+        .feature-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,.08)!important; }
+        .icon-box { width: 64px; height: 64px; display: inline-flex; align-items: center; justify-content: center; border-radius: 16px; margin-bottom: 1rem; }
+		
+		@media (max-width: 768px) {
+    img[alt*="Apple Pay"] {
+        max-width: 100% !important;
+    }
+}
+		
+	</style>
+
+
+<script>
+	jQuery(".dropdown-item").on("click", function() {
+	jQuery(this).attr("aria-selected", "true");
+	jQuery(this).addClass("active");
+	jQuery(".dropdown-item").not(this).attr("aria-selected", "false");
+	jQuery(".dropdown-item").not(this).removeClass("active");
+})
+</script>
+<!--Allow Mutiple Modals in 1 page-->
+<script>
+	var within_first_modal = false;
+$('.btn-second-modal').on('click', function() {
+  if ($(this).hasClass('within-first-modal')) {
+    within_first_modal = true;
+    $('#first-modal').modal('hide');
+  }
+  $('#second-modal').modal('show');
+});
+
+$('.btn-second-modal-close').on('click', function() {
+  $('#second-modal').modal('hide');
+  if (within_first_modal) {
+    $('#first-modal').modal('show');
+    within_first_modal = false;
+  }
+});
+
+$('.btn-toggle-fade').on('click', function() {
+  if ($('.modal').hasClass('fade')) {
+    $('.modal').removeClass('fade');
+    $(this).removeClass('btn-success');
+  } else {
+    $('.modal').addClass('fade');
+    $(this).addClass('btn-success');
+  }
+});
+</script>
+
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ6BHGL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- PAGE LOADING
+    ================================================== -->
+     <div id="preloader"></div><!--<div class="sticky-xl-top top-line">&nbsp;</div>-->
+
+    <!-- MAIN WRAPPER
+    ================================================== -->
+    <div class="main-wrapper">
+
+        <!-- HEADER
+        ================================================== -->
+        <header class="header-style2" style="z-index:99!important;">
+		
+	  	<div class="top-bar">
+                <div class="container px-lg-1-6 px-xl-2-5 px-xxl-2-9 py-1 mb-0">
+                    <div class="row pb-0 mb-0">
+                        <div class="col-12  pb-0 mb-0">
+							<ul class="top-social-icon ps-0 pb-0 mb-0">
+								
+								<li><button class="btn btn-light btn-link"  type="button" onclick="openInNewTab('https://www.paydollar.com/tchi/pdsoho_genpaystart_tc.html');">繳費站</button></li>
+								<li class="border-start pe-0">
+									<div class="dropdown d-grid">
+										<button class="btn btn-light2 btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">登入</button>
+										<ul class="dropdown-menu">
+											<li><a rel="noopener noreferrer" class="dropdown-item" href="https://admin.paydollar.com/b2c2/chi/merchant/index.jsp" target="_blank">商戶平台</a></li>
+											<li><a rel="noopener noreferrer" class="dropdown-item" href="https://admin.paydollar.com/b2c2/eng/reseller/index.jsp" target="_blank">分銷商平台</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="border-start"><button class="btn btn-light btn-link"  onclick="window.location.href='../en/voicepay.html';"  type="button">English</button></li>
+							</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-default border-bottom">
+                
+				<div class="container px-lg-1-6 px-xl-2-5 px-xxl-2-9">
+					
+					<div class="row align-items-center">
+                        <div class="col-12 col-lg-12">
+                            <div class="menu_area alt-font">
+                                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                                    <div class="navbar-header navbar-header-custom">
+                                        <!-- start logo -->
+                                        <a rel="noopener noreferrer" href="../index.html" class="navbar-brand logodefault"><img id="logo" src="../asset/img/logo/paydollar.svg" alt="PayDollar Logo"/></a>
+                                        <!-- end logo -->
+                                    </div>
+                                    
+									<!-- VERTICAL MENU // SHOW ONLY IN MOBILE/ TABLET -->
+                                    <div class="navbar-toggler bg-primary">
+										<div id="nav-container_ver">
+											<div class="button_ver" tabindex="0">
+												<span class="icon-bar_ver"></span>
+												<span class="icon-bar_ver"></span>
+												<span class="icon-bar_ver"></span>
+											</div>
+
+											<div id="nav-content_ver" tabindex="0">
+												<div class="sidenav" >
+													<a href="#contact" class="dropdown-btn" style="padding-top: 30px;">產品及服務 <i class="fa fa-caret-down"></i></a>
+													<div class="dropdown-container">
+														<a rel="noopener noreferrer" href="online-payments.html">網上支付</a>
+														<a rel="noopener noreferrer" href="retail-payments.html">零售支付</a>
+														<a rel="noopener noreferrer" href="value-added-services.html">增值服務及方案</a>
+														<a rel="noopener noreferrer" href="ecommerce-partners.html">電子商務平台合作夥伴</a>
+														<a rel="noopener noreferrer" href="merchant-admin-portal.html" style="padding-bottom: 30px;">商戶管理平台</a>
+													</div>
+
+													<a rel="noopener noreferrer" href="industries.html">服務行業</a>
+													<a rel="noopener noreferrer" href="resources.html">下載</a>
+													<a href="#contact" class="dropdown-btn">關於我們<i class="fa fa-caret-down"></i></a>
+													<div class="dropdown-container">
+														<a rel="noopener noreferrer" href="about-us.html">關於傳款易 (PayDollar)</a>
+														<a rel="noopener noreferrer" href="contact-us.html">聯絡我們</a>
+														<a rel="noopener noreferrer" href="faq.html" style="padding-bottom: 30px;">常見問題</a>
+													</div>
+													<a rel="noopener noreferrer" href="get-started.html" class="bg-APYellow fc-white">立即登記!</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+                                    <!-- start menu area -->
+                                    <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
+										<li>
+                                            <a rel="noopener noreferrer" href="#!">產品及服務</a>
+                                            <ul class="row megamenu">
+                                                <li class="col-lg-3 d-none d-lg-block" style="border-right:1px solid #c1c1c1;">
+                                                    <span class="mb-0 d-block p-lg-0 px-4 px-lg-0 text-uppercase sub-title  display-30">
+														<font class="fs-14 fc-blk font-weight-700">產品及服務</font>
+													</span>
+                                                    <p class="fc-grey fs-12">
+														透過 PayDollar 電子支付平台輕鬆接受 17 個市場的電子支付，支援多種支付方式、多貨幣、多渠道、多語言和多收單機構
+													</p>
+                                                </li>
+                                                <li class="col-lg-4">
+                                                    <a rel="noopener noreferrer" href="online-payments.html" class="fc-ap-blue fs-13 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">網上支付</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">透過您的網站或行動應用程式接受付款</p>
+													
+													<a rel="noopener noreferrer" href="retail-payments.html" class="fc-ap-blue fs-13 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">零售付款</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">透過 AppPay，於可以在智慧型行動裝置或智能移動終端接受零售支付</p>
+													
+                                                </li>
+                                                 <li class="col-lg-5">
+                                                    <a rel="noopener noreferrer" href="value-added-services.html" class="fc-ap-blue fs-13 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">增值服務及方案</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">為迎合不斷變更的市況及客戶需求而開發，助您加強在市場上的競爭力同時縮減營運成本</p>
+													
+													<a rel="noopener noreferrer" href="ecommerce-partners.html" class="fc-ap-blue fs-13 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">電子商務平台合作夥伴</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">我們已與當今最流行的電子商務平台建立合作夥伴關係，這意味著您可以獲得一個更大的潛在客戶網絡，有助於增加品牌曝光度，吸引更多的流量，提高銷售</p>
+													
+													<a rel="noopener noreferrer" href="merchant-admin-portal.html" class="fc-ap-blue fs-13 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">商戶管理平台</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">有效管理所有銷售交易、分析數據、下載報表、制定風險管理策略</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+										
+										<li>
+                                            <a rel="noopener noreferrer" href="industries.html">服務行業</a>
+                                        </li>
+										<li>
+                                            <a rel="noopener noreferrer" href="resources.html">下載</a>
+                                        </li>
+										<li>
+                                            <a rel="noopener noreferrer" href="#!">關於我們</a>
+                                            <ul class="row megamenu">
+                                                <li class="col-lg-4 d-none d-lg-block" style="border-right:1px solid #c1c1c1;">
+                                                    <span class="mb-0 d-block p-lg-0 px-4 px-lg-0 text-uppercase sub-title  display-30">
+														<font class="fs-14 fc-blk font-weight-700">關於我們</font>
+													</span>
+                                                    <p class="fc-grey fs-12">
+														PayDollar 一站式的支付平台，伴您邁向未來、創新商機
+													</p>
+                                                </li>
+                                                <li class="col-lg-8">
+                                                    <a rel="noopener noreferrer" href="about-us.html" class="fc-ap-blue fs-14 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">關於 PayDollar </a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">了解更多關於我們的品牌理念</p>
+													
+													<a rel="noopener noreferrer" href="contact-us.html" class="fc-ap-blue fs-14 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">聯絡我們</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">任何查詢歡迎隨時聯絡我們</p>
+													
+													<a rel="noopener noreferrer" href="faq.html" class="fc-ap-blue fs-14 fw-2" style="margin-top:0 !important; padding-top:0 !important; padding:0">常見問題</a>
+                                                    <p class="fc-grey fs-11 d-none d-lg-block" style="margin-top:0">立即解答一般常見問題</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+										
+										
+                                   </ul>
+									<!-- end menu area -->
+
+                                   <!-- start attribute navigation -->
+									 <div class="attr-nav align-items-xl-center ms-xl-auto main-font">
+                                        <ul>
+                                            <li class="d-none d-xl-inline-block">
+												<a rel="noopener noreferrer" href="get-started.html" class="btn-style3 special-offer"><span>立即登記</span></a>
+											</li>
+                                        </ul>
+                                    </div>
+                                    <!-- end attribute navigation -->
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+		<section class="m-0 p-0 bg-img cover-background" data-background="../asset/img/bg/bg-vas.webp" style="background-color:#fff; background-position:top left !important; background-size:100% auto !important">	
+			<div class="container" style="padding-bottom:100px">
+				<div class="py-4">
+					<div class="row">
+					  <div class="col-xl-7 col-md-12 align-middle mb-md-5 mb-sm-3 mb-3"">
+					    <p class="ff-poppins-medium"><a href="value-added-services.html">增值服務及方案</a> &gt; <font>VoicePay</font></p>
+						<p class="h1 display-26 display-sm-20 display-lg-20 display-xl-16 mb-2-9 fc-ap-blue mb-0 ff-poppins-bold fc-ap-blue" style="font-weight:normal;">
+						    VoicePay 
+							</p>
+						  <font class="fs-20 ff-poppins-bold" style="line-height:normal !important;">
+						  創新的支付解決方案，<br>實現安全、非接觸式的語音支付交易</font>
+						</div>
+
+						<div class="col-xl-5 col-md-12 text-center">
+							<img src="../asset/img/service/voicepay.png" alt="VoicePay Digital Setup" border="0" style="border-radius:20px; border:5px solid #fff;">
+						</div>
+					</div>
+				</div>
+				<div>
+					<h4><span style="font-family:roboto-bold">什麼是 VoicePay？ </span></h4>
+					<p align="left">
+						AsiaPay VoicePay 是一項創新的支付解決方案，利用語音識別技術實現安全、非接觸式交易。專為便利性和無障礙而設計，VoicePay 允許用戶只需對著智能音箱或智能手機等設備說話即可完成交易，無需實體卡、鍵盤或手動輸入。
+                    </p>
+					
+                    <!-- How It Works Section -->
+                    <div class="row mt-5 pt-4">
+                        <div class="col-12 text-center mb-5">
+                            <h2 class="fw-bold display-6">運作方式</h2>
+                            <p class="text-muted fs-5">無縫的四步語音支付旅程</p>
+                        </div>
+                        
+                        <div class="col-md-3 mb-4 text-center infographic-step">
+                            <div class="step-icon shadow-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+                            </div>
+                            <h5 class="fw-bold mt-3">1. 啟動</h5>
+                            <p class="text-muted px-2 fs-14">用戶向設備發出語音支付指令。</p>
+                        </div>
+                        <div class="col-md-3 mb-4 text-center infographic-step">
+                            <div class="step-icon shadow-sm" style="background-color: #0056b3;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="20"></line><line x1="15" y1="20" x2="15" y2="20"></line><line x1="20" y1="9" x2="20" y2="9"></line><line x1="20" y1="14" x2="20" y2="14"></line><line x1="4" y1="9" x2="4" y2="9"></line><line x1="4" y1="14" x2="4" y2="14"></line></svg>
+                            </div>
+                            <h5 class="fw-bold mt-3">2. 處理</h5>
+                            <p class="text-muted px-2 fs-14">系統透過人工智能和語音識別處理指令。</p>
+                        </div>
+                        <div class="col-md-3 mb-4 text-center infographic-step">
+                            <div class="step-icon shadow-sm" style="background-color: #007bff;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <h5 class="fw-bold mt-3">3. 安全認證</h5>
+                            <p class="text-muted px-2 fs-14">透過所選的電子錢包對付款進行身份驗證。</p>
+                        </div>
+                        <div class="col-md-3 mb-4 text-center infographic-step">
+                            <div class="step-icon shadow-sm" style="background-color: #28a745;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            </div>
+                            <h5 class="fw-bold mt-3">4. 確認</h5>
+                            <p class="text-muted px-2 fs-14">用戶立即收到交易確認。</p>
+                        </div>
+                    </div>
+
+                    <!-- Key Features Section -->
+                    <div class="row mt-5 pt-4">
+                        <div class="col-12 text-center mb-5">
+                            <h2 class="fw-bold display-6">主要功能</h2>
+                            <p class="text-muted fs-5">驅動 VoicePay 的新一代功能</p>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 bg-light p-4">
+                                <div class="icon-box" style="background-color: #e0f2fe; color: #0284c7;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+                                </div>
+                                <h5 class="fw-bold">語音啟動結帳</h5>
+                                <p class="text-muted mb-0 fs-14">顧客可以使用簡單的語音指令確認並完成付款。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 bg-light p-4">
+                                <div class="icon-box" style="background-color: #dbeafe; color: #2563eb;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path></svg>
+                                </div>
+                                <h5 class="fw-bold">支援多種電子錢包</h5>
+                                <p class="text-muted mb-0 fs-14">兼容主流電子錢包（Apple Pay、八達通、Google Pay、支付寶、微信支付等）。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 bg-light p-4">
+                                <div class="icon-box" style="background-color: #f3e8ff; color: #9333ea;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                </div>
+                                <h5 class="fw-bold">購物車無縫整合</h5>
+                                <p class="text-muted mb-0 fs-14">透過 API 與 AsiaPay 支付網關整合，確保在電子商務平台上順利部署。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 bg-light p-4">
+                                <div class="icon-box" style="background-color: #d1fae5; color: #059669;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                                </div>
+                                <h5 class="fw-bold">安全身份驗證</h5>
+                                <p class="text-muted mb-0 fs-14">內建支援業界生物識別和代幣化安全標準。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 bg-light p-4">
+                                <div class="icon-box" style="background-color: #ffedd5; color: #ea580c;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                </div>
+                                <h5 class="fw-bold">跨平台兼容</h5>
+                                <p class="text-muted mb-0 fs-14">在桌面和移動設備上的移動應用程式和網絡瀏覽器中無縫運行。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 bg-light p-4">
+                                <div class="icon-box" style="background-color: #fce7f3; color: #db2777;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                                </div>
+                                <h5 class="fw-bold">可自訂品牌形象</h5>
+                                <p class="text-muted mb-0 fs-14">商戶可以輕鬆定制結帳流程以反映其品牌形象。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mb-4">
+                            <div class="card feature-card border-0 p-4" style="background: linear-gradient(135deg, #fffbeb, #fef3c7); border: 1px solid #fde68a !important;">
+                                <div class="d-flex align-items-center flex-column flex-md-row text-center text-md-start">
+                                    <div class="icon-box me-md-4 mb-3 mb-md-0 flex-shrink-0 shadow-sm" style="background-color: #f59e0b; color: white;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold text-dark mb-2">⚡ 現有商戶零代碼啟用</h5>
+                                        <p class="text-dark opacity-75 mb-0">現有商戶可以立即解鎖全新的支付體驗，無需開發工作——無代碼，無系統更改，實現更快的價值轉化。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefits Section -->
+                    <div class="row mt-5 pt-4">
+                        <div class="col-12 text-center mb-5">
+                            <h2 class="fw-bold display-6">對商戶的好處</h2>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 p-4" style="background: #ffffff; border: 1px solid #f1f3f5 !important;">
+                                <div class="text-center mb-3">
+                                    <div class="icon-box shadow-sm" style="background-color: #f8f9fa; color: #ffc107;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    </div>
+                                </div>
+                                <h5 class="card-title fw-bold text-center text-primary">提升客戶體驗</h5>
+                                <p class="text-center text-muted fs-14">提供快速、直觀且現代化的結帳選項，大幅降低購物車放棄率。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 p-4" style="background: #ffffff; border: 1px solid #f1f3f5 !important;">
+                                <div class="text-center mb-3">
+                                    <div class="icon-box shadow-sm" style="background-color: #f8f9fa; color: #28a745;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                                    </div>
+                                </div>
+                                <h5 class="card-title fw-bold text-center text-primary">提高轉化率</h5>
+                                <p class="text-center text-muted fs-14">語音支付縮短了結帳旅程，鼓勵衝動購買和重複購買。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 p-4" style="background: #ffffff; border: 1px solid #f1f3f5 !important;">
+                                <div class="text-center mb-3">
+                                    <div class="icon-box shadow-sm" style="background-color: #f8f9fa; color: #17a2b8;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                    </div>
+                                </div>
+                                <h5 class="card-title fw-bold text-center text-primary">營運效率</h5>
+                                <p class="text-center text-muted fs-14">簡化支付流程，減少手動輸入錯誤，並簡化交易管理。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 p-4" style="background: #ffffff; border: 1px solid #f1f3f5 !important;">
+                                <div class="text-center mb-3">
+                                    <div class="icon-box shadow-sm" style="background-color: #f8f9fa; color: #6f42c1;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l8.3-8.3a2 2 0 0 0 0-2.8l-1.4-1.4a2 2 0 0 0-2.8 0L7.8 10.8"></path><path d="M12 15l-3.5 3.5a2 2 0 0 1-2.8 0l-1.4-1.4a2 2 0 0 1 0-2.8L7.8 10.8"></path><circle cx="12" cy="15" r="2"></circle></svg>
+                                    </div>
+                                </div>
+                                <h5 class="card-title fw-bold text-center text-primary">品牌差異化</h5>
+                                <p class="text-center text-muted fs-14">提供尖端的支付體驗，將您的企業定位為市場創新者。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 p-4" style="background: #ffffff; border: 1px solid #f1f3f5 !important;">
+                                <div class="text-center mb-3">
+                                    <div class="icon-box shadow-sm" style="background-color: #f8f9fa; color: #fd7e14;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                                    </div>
+                                </div>
+                                <h5 class="card-title fw-bold text-center text-primary">高擴展性</h5>
+                                <p class="text-center text-muted fs-14">適用於各種規模的企業，提供靈活的整合選項以支持您的業務增長。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card h-100 border-0 p-4" style="background: #ffffff; border: 1px solid #f1f3f5 !important;">
+                                <div class="text-center mb-3">
+                                    <div class="icon-box shadow-sm" style="background-color: #f8f9fa; color: #dc3545;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                    </div>
+                                </div>
+                                <h5 class="card-title fw-bold text-center text-primary">安全與合規</h5>
+                                <p class="text-center text-muted fs-14">符合嚴格的國際支付標準，確保交易安全、代幣化且可靠。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Easy Setup Block -->
+                    <div class="row mt-5 p-5 rounded-4 h-100 d-flex align-items-center bg-ap-blue text-white shadow-lg transition-hover" style="background-color: #002e5b;">
+                        <div class="col-lg-12">
+                            <blockquote>
+                                <h3 class="fw-bold mb-3 text-white">設置簡易</h3>
+                            </blockquote>
+                            <p class="fs-5">VoicePay 可以透過管理員後台快速啟用，無需任何開發：</p>
+                            <ol class="fs-5 lh-lg">
+                                <li>商戶使用 <strong>Client Post Through Browser</strong>。</li>
+                                <li>啟用 <strong>語音支付 (Voice Payment)</strong> 選項。</li>
+                                <li>選擇至少一種支援的付款方式：<br>
+												  <img 
+    src="../asset/img/voicepay/voicepaysupportlogos.png"
+    alt="Apple Pay、Google Pay、支付寶、微信支付、PayMe 或八達通。"
+    class="img-fluid rounded-2 shadow-sm d-block"
+    style="max-width: 60%;"
+/></li>
+                            </ol>
+                            <p class="mt-4 fw-bold fs-5 text-warning">啟用後，商戶可以立即開始向客戶提供語音支付服務！</p>
+                        </div>
+                    </div>
+					
+                    <!-- Conclusion Text -->
+                    <div class="row mt-5">
+                        <div class="col-12 text-center">
+                            <p class="lead">AsiaPay 語音支付整合方案透過結合語音技術與電子錢包支付，助力商戶提供新一代的結帳體驗。它能提升客戶滿意度，增強忠誠度，並使企業在快速發展的數碼商業環境中保持競爭優勢。</p>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+					<div class="text-center mt-5 py-5 px-3 rounded-4 bg-light">
+                        <h3 class="fw-bold text-dark mb-3">🚀 停止打字，開始說話！</h3>
+                        <p class="fs-5 text-muted mb-4">為您的客戶帶來免提、安全且充滿未來感的購物體驗。立即消除支付障礙，提升您的銷售額！</p>
+                        <a href="get-started.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow">立即整合 VoicePay！</a>
+                    </div>
+					
+			    </div>
+			</div>
+		</section>
+		
+		 
+
+
+		<!-- FOOTER
+        ================================================== -->
+        <footer class="position-relative pt-1-9 loadanimate">
+            <div class="container">
+                <div class="row mt-n5 pb-6 pb-xxl-10">
+                    <div class="col-md-6 col-lg-4 mt-5">
+                        <h3 class="text-white fs-12 mb-1-9">關於PayDollar</h3>
+                        <ul class="footer-link list-unstyled">
+							<li class="text-white mb-3 fs-12 opacity6">
+								PayDollar 是聯款通有限公司全資擁有和營運的一站式電子支付平台，支持商戶接受國際上主要流動的支付方式。憑藉 20多年的處理電子支付的專業知識和技術，我們致力於幫助企業數碼轉型、克服當中技術上挑戰、簡化電子支付流程、優化購買經驗、擴闊銷售渠道，並同時提供反欺詐和安全機制，幫助防止詐騙交易，保護商家的利益。
+							 </li>
+						</ul>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-5">
+                        <div class="ps-0">
+                            <h3 class="text-white h6 mb-1-9">聯絡我們</h3>
+                            <ul class="footer-link list-unstyled">
+                                <li class="text-white mb-3 fs-12 opacity6">
+                                   實現您所想，請立即聯絡我們
+                                </li>
+                                <li class="text-white mb-3 fs-12">
+                                    <strong>電郵:</strong> <a rel="noopener noreferrer" class="link-white" href="/cdn-cgi/l/email-protection#c2b1a3aea7b182b2a3bba6adaeaea3b0eca1adaf"><span class="__cf_email__" data-cfemail="a0d3c1ccc5d3e0d0c1d9c4cfccccc1d28ec3cfcd">[email&#160;protected]</span></a>
+                                </li>
+                                <li class="text-white fs-12">
+                                    <strong>電話:</strong> <a rel="noopener noreferrer" class="link-white" href="tel:852 2538 8278">+852 2538 8278</a>
+                                </li>
+                            </ul>
+							<ul class="social-icon-style1">
+								<li>
+									<a rel="noopener noreferrer" class="rounded-2" href="https://www.facebook.com/paydollarofficial/" target="_blank"><img src="../asset/img/icon/facebook.svg"></a>
+								</li>
+								<li>
+									<a rel="noopener noreferrer" class="rounded-2" href="https://www.linkedin.com/showcase/paydollar-global?trk=affiliated-pages" target="_blank"><img src="../asset/img/icon/linkedin.svg"></a>
+								</li>
+								<li>
+									<a rel="noopener noreferrer" class="rounded-2" href="https://www.youtube.com/channel/UCThpVgcEseBDUuPeggXbVAw" target="_blank"><img src="../asset/img/icon/youtube.svg"></a>
+								</li>
+								<!--<li>
+									<a rel="noopener noreferrer" class="rounded-2" href="https://wa.me/60321618188" target="_blank"><img src="../asset/img/icon/whatsapp.svg"></a>
+								</li>-->
+							</ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-5">
+                        <div class="">
+                            <div class="text-white h6 mb-1-6">已經是我們的客戶或分銷商？</div>
+							<div class="dropdown mb-4 d-grid">
+								<button class="btn btn-secondary dropdown-toggle btn-country text-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								登入
+								</button>
+								<ul class="dropdown-menu">
+									<li><a rel="noopener noreferrer" class="dropdown-item" href="https://admin.paydollar.com/b2c2/chi/merchant/index.jsp" target="_blank">商戶平台</a></li>
+									<li><a rel="noopener noreferrer" class="dropdown-item" href="https://admin.paydollar.com/b2c2/eng/reseller/index.jsp" target="_blank">分銷商平台</a></li>
+								</ul>
+							</div>
+							<div class="d-grid">
+								<button class="btn btn-secondary btn-country text-start" onclick="openInNewTab('https://www.paydollar.com/tchi/pdsoho_genpaystart_tc.html');" type="button">繳費站</button>
+							</div>
+							<div class="d-grid mt-4">
+								<button class="btn btn-secondary btn-country text-start" onclick="window.location.href='../en/voicepay.html'" type="button">English</button>
+							</div>
+						</div>
+						
+                    </div>
+                </div>
+            </div>
+            
+			<div class="py-4 border-top border-color-light-white">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+							<p class="my-0">
+								<a rel="noopener noreferrer" class="link-light fs-11" href="terms-of-use.html">使用條款</a><font class="text-white opacity5">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+								<a rel="noopener noreferrer" class="link-light fs-11" href="privacy-policy.html">隱私權政策</a><font class=" text-white opacity5">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+								<a rel="noopener noreferrer" class="link-light fs-11" href="security-policy.html">安全策略</a>
+							</p>
+                            <p class="d-inline-block text-white mb-0 mt-0 p-0 fs-10 opacity6">&copy; <span class="current-year"></span> AsiaPay Limited</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- SCROLL TO TOP
+    ================================================== -->
+    <!--<a href="#!" class="scroll-to-top rounded-3"><i aria-hidden="true"><img src="../asset/img/icon/top.svg"></i></a>-->
+
+    <!-- all js include start -->
+
+    <!-- jQuery -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../asset/js/jquery.min.js"></script>
+
+    <!-- popper js -->
+    <script src="../asset/js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../asset/js/bootstrap.min.js"></script>
+
+    <!-- navigation -->
+    <script src="../asset/js/nav-menu.js"></script>
+
+    <!-- owl carousel-->
+    <script src="../asset/js/owl.carousel.js"></script> 
+
+    <!-- jquery.counterup.min -->
+    <script src="../asset/js/jquery.counterup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="../asset/js/jquery.stellar.min.js"></script>
+
+    <!-- easy.responsive.tabs js -->
+    <script src="../asset/js/easy.responsive.tabs.js"></script>
+
+    <!-- waypoints js -->
+    <script src="../asset/js/waypoints.min.js"></script>
+
+    <!-- countdown js -->
+    <script src="../asset/js/countdown.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="../asset/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- lightgallery js -->
+    <script src="../asset/js/lightgallery-all.js"></script>
+
+    <!-- mousewheel js -->
+    <script src="../asset/js/jquery.mousewheel.min.js"></script>
+
+    <!--  clipboard js -->
+    <script src="../asset/js/clipboard.min.js"></script>
+
+    <!--  prism js -->
+    <script src="../asset/js/prism.js"></script>
+
+    <!-- custom scripts -->
+    <script src="../asset/js/main.js"></script>
+
+	<!-- additional scripts -->
+    <script src="../asset/js/custom.js"></script>
+	
+	<!-- owl index scripts  -->
+	<script src="../asset/owl/jquery-3.6.0.min.js"></script>
+    <script src="../asset/owl/owl.carousel.min.js"></script>
+    <script src="../asset/owl/script-content.js"></script>
+
+
+
+
+    <!-- all js include end -->
+
+<script>
+  // Function to check the URL parameters and open the specified modal
+  function openModalFromURLParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const openModal = urlParams.get('openModal');
+
+    if (openModal) {
+      var modal = new bootstrap.Modal(document.getElementById(openModal));
+      modal.show();
+    }
+  }
+
+  // Call the function on page load
+  window.onload = openModalFromURLParams;
+</script>
+<script>
+        $(".owl-carousel").owlCarousel({
+  loop: true,
+  nav: true,
+  dots: true,
+  items: 1
+});
+
+var owlCarousel = $('.owl-carousel').data('owl.carousel');
+owlCarousel.remove(1);
+    </script>
+	
+
+<script>includeHTML();</script></body>
+</html>
