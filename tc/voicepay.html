@@ -67,6 +67,11 @@ src="https://www.facebook.com/tr?id=338242285739795&ev=PageView&noscript=1"
     
     <!-- Bootstrap CSS (Fallback for Preview) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- jQuery and OwlCarousel (Fallback for Preview) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <!-- search css -->
     <link rel="stylesheet" href="../asset/search/search.css">
@@ -136,49 +141,61 @@ src="https://www.facebook.com/tr?id=338242285739795&ev=PageView&noscript=1"
         .icon-box { width: 64px; height: 64px; display: inline-flex; align-items: center; justify-content: center; border-radius: 16px; margin-bottom: 1rem; }
 		
 		@media (max-width: 768px) {
-    img[alt*="Apple Pay"] {
-        max-width: 100% !important;
-    }
-}
+            img[alt*="Apple Pay"] {
+                max-width: 100% !important;
+            }
+        }
 		
+        /* CSS เพิ่มเติมสำหรับลบเส้นใต้ลิงก์ใน header และ footer */
+        header a, footer a {
+            text-decoration: none !important;
+        }
+        header a:hover, footer a:hover {
+            text-decoration: none !important;
+        }
+
 	</style>
 
 
 <script>
+$(document).ready(function() {
 	jQuery(".dropdown-item").on("click", function() {
-	jQuery(this).attr("aria-selected", "true");
-	jQuery(this).addClass("active");
-	jQuery(".dropdown-item").not(this).attr("aria-selected", "false");
-	jQuery(".dropdown-item").not(this).removeClass("active");
-})
+        jQuery(this).attr("aria-selected", "true");
+        jQuery(this).addClass("active");
+        jQuery(".dropdown-item").not(this).attr("aria-selected", "false");
+        jQuery(".dropdown-item").not(this).removeClass("active");
+    });
+});
 </script>
 <!--Allow Mutiple Modals in 1 page-->
 <script>
+$(document).ready(function() {
 	var within_first_modal = false;
-$('.btn-second-modal').on('click', function() {
-  if ($(this).hasClass('within-first-modal')) {
-    within_first_modal = true;
-    $('#first-modal').modal('hide');
-  }
-  $('#second-modal').modal('show');
-});
+    $('.btn-second-modal').on('click', function() {
+      if ($(this).hasClass('within-first-modal')) {
+        within_first_modal = true;
+        $('#first-modal').modal('hide');
+      }
+      $('#second-modal').modal('show');
+    });
 
-$('.btn-second-modal-close').on('click', function() {
-  $('#second-modal').modal('hide');
-  if (within_first_modal) {
-    $('#first-modal').modal('show');
-    within_first_modal = false;
-  }
-});
+    $('.btn-second-modal-close').on('click', function() {
+      $('#second-modal').modal('hide');
+      if (within_first_modal) {
+        $('#first-modal').modal('show');
+        within_first_modal = false;
+      }
+    });
 
-$('.btn-toggle-fade').on('click', function() {
-  if ($('.modal').hasClass('fade')) {
-    $('.modal').removeClass('fade');
-    $(this).removeClass('btn-success');
-  } else {
-    $('.modal').addClass('fade');
-    $(this).addClass('btn-success');
-  }
+    $('.btn-toggle-fade').on('click', function() {
+      if ($('.modal').hasClass('fade')) {
+        $('.modal').removeClass('fade');
+        $(this).removeClass('btn-success');
+      } else {
+        $('.modal').addClass('fade');
+        $(this).addClass('btn-success');
+      }
+    });
 });
 </script>
 
@@ -218,7 +235,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										</ul>
 									</div>
 								</li>
-								<li class="border-start"><button class="btn btn-light btn-link"  onclick="window.location.href='../en/voicepay.html';"  type="button">English</button></li>
+								<li class="border-start"><button class="btn btn-light btn-link"  onclick="window.location.href='../en/refund-protect.html';"  type="button">English</button></li>
 							</ul>
                         </div>
                     </div>
@@ -363,13 +380,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="container" style="padding-bottom:100px">
 				<div class="py-4">
 					<div class="row">
-					  <div class="col-xl-7 col-md-12 align-middle mb-md-5 mb-sm-3 mb-3"">
+					  <div class="col-xl-7 col-md-12 align-middle mb-md-5 mb-sm-3 mb-3">
 					    <p class="ff-poppins-medium"><a href="value-added-services.html">增值服務及方案</a> &gt; <font>VoicePay</font></p>
 						<p class="h1 display-26 display-sm-20 display-lg-20 display-xl-16 mb-2-9 fc-ap-blue mb-0 ff-poppins-bold fc-ap-blue" style="font-weight:normal;">
 						    VoicePay 
 							</p>
 						  <font class="fs-20 ff-poppins-bold" style="line-height:normal !important;">
-						  創新的支付解決方案，<br>實現安全、非接觸式的語音支付交易</font>
+						  您的智慧語音支付</font>
 						</div>
 
 						<div class="col-xl-5 col-md-12 text-center">
@@ -792,17 +809,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   window.onload = openModalFromURLParams;
 </script>
 <script>
+$(document).ready(function() {
+    if ($.fn.owlCarousel) {
         $(".owl-carousel").owlCarousel({
-  loop: true,
-  nav: true,
-  dots: true,
-  items: 1
-});
+          loop: true,
+          nav: true,
+          dots: true,
+          items: 1
+        });
 
-var owlCarousel = $('.owl-carousel').data('owl.carousel');
-owlCarousel.remove(1);
-    </script>
+        var owlCarousel = $('.owl-carousel').data('owl.carousel');
+        if (owlCarousel) {
+            owlCarousel.remove(1);
+        }
+    }
+});
+</script>
 	
 
-<script>includeHTML();</script></body>
+<script>
+    if (typeof includeHTML === 'function') {
+        includeHTML();
+    }
+</script>
+</body>
 </html>
