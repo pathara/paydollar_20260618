@@ -18,7 +18,7 @@
 	<!-- End Google Tag Manager -->
 
 	<!-- Global site tag (gtag.js) - Google Ads: 10882716108 --> 
-	<script src="https://www.googletagmanager.com/gtag/js?id=AW-10882716108" integrity="sha512-/EsyrHWkAvzYCzPrLpKehzhxJzwzJVPaEB/L/W1D+exE//F87kSBn1rJCGRlZZZdQmzN27pRhjmJY7PbrjXWUw==" crossorigin="anonymous"></script> 
+	<script src="https://www.googletagmanager.com/gtag/js?id=AW-10882716108" xintegrity="sha512-/EsyrHWkAvzYCzPrLpKehzhxJzwzJVPaEB/L/W1D+exE//F87kSBn1rJCGRlZZZdQmzN27pRhjmJY7PbrjXWUw==" crossorigin="anonymous"></script> 
 	<script>
 			window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10882716108');
 	</script>
@@ -83,17 +83,22 @@ src="https://www.facebook.com/tr?id=338242285739795&ev=PageView&noscript=1"
     <!-- vertical_menu -->
     <link rel="stylesheet"  href="../asset/css/vertical_menu.css">
 	
-
+	<!-- custom effects -->
+    <style>
+        .pos-box {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .pos-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+        }
+        .softpos-card {
+            text-decoration: none !important;
+            display: block;
+            height: 100%;
+        }
+    </style>
 	
-<script>
-	jQuery(".dropdown-item").on("click", function() {
-	jQuery(this).attr("aria-selected", "true");
-	jQuery(this).addClass("active");
-	jQuery(".dropdown-item").not(this).attr("aria-selected", "false");
-	jQuery(".dropdown-item").not(this).removeClass("active");
-})
-</script>
-
 </head>
 
 <body>
@@ -337,23 +342,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</p>
 					</div>
 					<div class="row gx-5">
-						<div class="col">
-							<div class="p-3 pt-4 bg-white rounded" style="box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);">
+						<div class="col mb-4 mb-md-0">
+							<div class="p-3 pt-4 bg-white rounded pos-box h-100 d-flex flex-column" style="box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);">
 								<h2 class="fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 text-center ff-poppins-bold">SmartPOS</h2>
-								<p class="text-center ff-poppins-medium fc-ap-blue">
+								<p class="text-center ff-poppins-medium fc-ap-blue flex-grow-1">
 									在單一終端機上管理所有付款交易<br>
 									<font style="font-family:roboto; color:#000;">相容於最新的智慧終端設備，例如 SUNMI、NEXGO、PAX 等</font>
 								</p>
-								
 							</div>
 						</div>
 						<div class="col">
-							<div class="p-3 pt-4 bg-white rounded" style="box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);">
-								<h2 class="fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 text-center ff-poppins-bold">SoftPOS</h2>
-								<p class="text-center ff-poppins-medium fc-ap-blue">
-									將您的智慧裝置轉變為支付終端機，無需額外硬體。<br><br>
-								</p>
-							</div>
+                            <a href="softpos.html" class="softpos-card">
+							    <div class="p-3 pt-4 bg-white rounded pos-box h-100 d-flex flex-column" style="box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);">
+							    	<h2 class="fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 text-center ff-poppins-bold">SoftPOS</h2>
+							    	<p class="text-center ff-poppins-medium fc-ap-blue flex-grow-1">
+							    		將您的智慧裝置轉變為支付終端機，無需額外硬體。<br><br>
+							    	</p>
+                                    <div class="text-center pb-2 mt-auto">
+                                        <span class="btn btn-primary rounded-pill px-4 py-2" style="background-color: #004d99; border-color: #004d99; font-size: 14px;">Learn More</span>
+                                    </div>
+							    </div>
+                            </a>
 						</div>
 					</div>
 				
@@ -499,7 +508,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												</div>
 											</div>
 											<div class="flex-grow-1 ms-3 ms-lg-4">
-												<h5 class="fs-13 mb-1 fcase-none fc-blk mt-2 fc-ap-blue">大大提升銷售和顧客滿意度</h5>
+												<h5 class="fs-13 mb-1 fcase-none fc-blk mt-2 fc-ap-blue">大大提升銷售และ顧客滿意度</h5>
 												<p class="mb-3">
 													<span class="fw-1">滿足不同顧客需要</span>
 													我們的解決方案助您滿足顧客需要，在優化收款流程時提升顧客滿意度。</p>
@@ -699,5 +708,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- all js include end -->
 
-<script>includeHTML();</script></body>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery(".dropdown-item").on("click", function() {
+                jQuery(this).attr("aria-selected", "true");
+                jQuery(this).addClass("active");
+                jQuery(".dropdown-item").not(this).attr("aria-selected", "false");
+                jQuery(".dropdown-item").not(this).removeClass("active");
+            });
+        });
+    </script>
+</body>
 </html>

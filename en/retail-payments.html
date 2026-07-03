@@ -18,7 +18,7 @@
 	<!-- End Google Tag Manager -->
 
 	<!-- Global site tag (gtag.js) - Google Ads: 10882716108 --> 
-	<script src="https://www.googletagmanager.com/gtag/js?id=AW-10882716108" integrity="sha512-/EsyrHWkAvzYCzPrLpKehzhxJzwzJVPaEB/L/W1D+exE//F87kSBn1rJCGRlZZZdQmzN27pRhjmJY7PbrjXWUw==" crossorigin="anonymous"></script> 
+	<script src="https://www.googletagmanager.com/gtag/js?id=AW-10882716108" xintegrity="sha512-/EsyrHWkAvzYCzPrLpKehzhxJzwzJVPaEB/L/W1D+exE//F87kSBn1rJCGRlZZZdQmzN27pRhjmJY7PbrjXWUw==" crossorigin="anonymous"></script> 
 	<script>
 			window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10882716108');
 	</script>
@@ -87,16 +87,38 @@ src="https://www.facebook.com/tr?id=338242285739795&ev=PageView&noscript=1"
     <!-- vertical_menu -->
     <link rel="stylesheet" href="../asset/css/vertical_menu.css">
 	
-
+    <!-- Custom POS Box Styles -->
+    <style>
+        .pos-box {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .pos-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.15) !important;
+        }
+        .softpos-link {
+            text-decoration: none !important;
+            display: block;
+            color: inherit;
+        }
+        .softpos-link:hover {
+            color: inherit;
+        }
+        .learn-more-btn {
+            background-color: #005eb8;
+            color: #ffffff !important;
+            padding: 8px 25px;
+            border-radius: 30px;
+            display: inline-block;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        .learn-more-btn:hover {
+            background-color: #00468a;
+        }
+    </style>
 	
-<script>
-	jQuery(".dropdown-item").on("click", function() {
-	jQuery(this).attr("aria-selected", "true");
-	jQuery(this).addClass("active");
-	jQuery(".dropdown-item").not(this).attr("aria-selected", "false");
-	jQuery(".dropdown-item").not(this).removeClass("active");
-})
-</script>
+<!-- Removed jQuery script from here to avoid "jQuery is not defined" error before it loads -->
 
 </head>
 
@@ -340,23 +362,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="row gx-5">
 						<div class="col">
-							<div class="p-3 pt-4 bg-white rounded" style="box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);">
+                            <!-- SmartPOS Box - Hover effect added, but no link (cannot be clicked) -->
+							<div class="p-3 pt-4 bg-white rounded pos-box h-100" style="box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1); cursor: default;">
 								<h2 class="fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 text-center ff-poppins-bold">SmartPOS</h2>
 								<p class="text-center ff-poppins-medium fc-ap-blue">
 									Manage all your payments in a single terminal.<br>
 									<font style="font-family:roboto; color:#000;">Compatible with the latest smart terminal devices, such as SUNMI, NEXGO, PAX, LANDI and more.</font>
 								</p>
-								
 							</div>
 						</div>
 						<div class="col">
-							<div class="p-3 pt-4 bg-white rounded" style="box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);">
-								<h2 class="fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 text-center ff-poppins-bold">SoftPOS</h2>
-								<p class="text-center ff-poppins-medium fc-ap-blue">
-									Transform your smart device into a payment terminal.<br>
-									No extra hardware needed.<br><br>
-								</p>
-							</div>
+                            <!-- SoftPOS Box - Link added, Hover effect added, Learn More button added -->
+                            <a href="softpos.html" class="softpos-link h-100">
+                                <div class="p-3 pt-4 bg-white rounded pos-box h-100 d-flex flex-column justify-content-between" style="box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);">
+                                    <div>
+                                        <h2 class="fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 text-center ff-poppins-bold">SoftPOS</h2>
+                                        <p class="text-center ff-poppins-medium fc-ap-blue">
+                                            Transform your smart device into a payment terminal.<br>
+                                            No extra hardware needed.<br><br>
+                                        </p>
+                                    </div>
+                                    <div class="text-center mt-2 mb-2">
+                                        <span class="learn-more-btn">Learn More</span>
+                                    </div>
+                                </div>
+                            </a>
 						</div>
 					</div>
 				
@@ -694,5 +724,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- all js include end -->
 
-<script>includeHTML();</script></body>
+    <script>
+        // Move the script here, AFTER jQuery is loaded
+        jQuery(document).ready(function() {
+            jQuery(".dropdown-item").on("click", function() {
+                jQuery(this).attr("aria-selected", "true");
+                jQuery(this).addClass("active");
+                jQuery(".dropdown-item").not(this).attr("aria-selected", "false");
+                jQuery(".dropdown-item").not(this).removeClass("active");
+            });
+        });
+    </script>
+    
+    <!-- includeHTML() removed as it is not defined -->
+</body>
 </html>
