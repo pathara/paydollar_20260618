@@ -95,8 +95,35 @@
 			  100% { opacity : 0 ; }  
 			}
         
-        .feature-card { transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 12px; }
-        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0,0,0,.06)!important; }
+        /* SoftPos Custom Styles matched to previous versions */
+        .feature-card { transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 12px; border: none; background-color: #f8f9fa; padding: 25px; height: 100%;}
+        .feature-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,.08)!important; }
+        
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            flex-shrink: 0;
+        }
+
+        /* Equal Height Flexbox for Cards */
+        .flex-row-eq-height {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex-row-eq-height > [class*='col-'] {
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-row-eq-height .feature-card {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
 		
 		@media (max-width: 768px) {
             img[alt*="Apple Pay"], img[alt*="SoftPos"] {
@@ -106,41 +133,44 @@
 	</style>
 
 <script>
-	jQuery(".dropdown-item").on("click", function() {
-        jQuery(this).attr("aria-selected", "true");
-        jQuery(this).addClass("active");
-        jQuery(".dropdown-item").not(this).attr("aria-selected", "false");
-        jQuery(".dropdown-item").not(this).removeClass("active");
-    })
-</script>
-<!--Allow Mutiple Modals in 1 page-->
-<script>
-	var within_first_modal = false;
-$('.btn-second-modal').on('click', function() {
-  if ($(this).hasClass('within-first-modal')) {
-    within_first_modal = true;
-    $('#first-modal').modal('hide');
-  }
-  $('#second-modal').modal('show');
-});
+  document.addEventListener("DOMContentLoaded", function() {
+      // Delay execution until jQuery is guaranteed to be loaded
+      if (typeof jQuery !== 'undefined') {
+        jQuery(".dropdown-item").on("click", function() {
+            jQuery(this).attr("aria-selected", "true");
+            jQuery(this).addClass("active");
+            jQuery(".dropdown-item").not(this).attr("aria-selected", "false");
+            jQuery(".dropdown-item").not(this).removeClass("active");
+        });
 
-$('.btn-second-modal-close').on('click', function() {
-  $('#second-modal').modal('hide');
-  if (within_first_modal) {
-    $('#first-modal').modal('show');
-    within_first_modal = false;
-  }
-});
+        var within_first_modal = false;
+        jQuery('.btn-second-modal').on('click', function() {
+          if (jQuery(this).hasClass('within-first-modal')) {
+            within_first_modal = true;
+            jQuery('#first-modal').modal('hide');
+          }
+          jQuery('#second-modal').modal('show');
+        });
 
-$('.btn-toggle-fade').on('click', function() {
-  if ($('.modal').hasClass('fade')) {
-    $('.modal').removeClass('fade');
-    $(this).removeClass('btn-success');
-  } else {
-    $('.modal').addClass('fade');
-    $(this).addClass('btn-success');
-  }
-});
+        jQuery('.btn-second-modal-close').on('click', function() {
+          jQuery('#second-modal').modal('hide');
+          if (within_first_modal) {
+            jQuery('#first-modal').modal('show');
+            within_first_modal = false;
+          }
+        });
+
+        jQuery('.btn-toggle-fade').on('click', function() {
+          if (jQuery('.modal').hasClass('fade')) {
+            jQuery('.modal').removeClass('fade');
+            jQuery(this).removeClass('btn-success');
+          } else {
+            jQuery('.modal').addClass('fade');
+            jQuery(this).addClass('btn-success');
+          }
+        });
+      }
+  });
 </script>
 </head>
 
@@ -312,209 +342,167 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		<!-- MAIN SOFTPOS SECTION -->
 		<section class="m-0 p-0 bg-img cover-background" data-background="../asset/img/bg/bg-vas.webp" style="background-color:#fff; background-position:top left !important; background-size:100% auto !important">	
-			<div class="container" style="padding-bottom:100px">
+			<div class="container" style="padding-bottom:100px; padding-top:0px;">
 				<div class="py-4">
 					<div class="row">
 					    <div class="col-xl-7 col-md-12 align-middle mb-md-5 mb-sm-3 mb-3">
-					        <p class="ff-poppins-medium"><a href="retail-payments.html">Retail Payments</a> &gt; <font>SoftPos</font></p>
-						    <p class="h1 display-26 display-sm-20 display-lg-20 display-xl-16 mb-2-9 fc-ap-blue mb-0 ff-poppins-bold fc-ap-blue" style="font-weight:normal;">
-						        SoftPos 
-							</p>
-						    <font class="fs-20 ff-poppins-bold" style="line-height:normal !important;">
-						        Transforms everyday devices into secure payment tools.📱 
-                            </font>
+					        <p style="color: #555;"><a href="retail-payments.html" style="color: #555; text-decoration: none;">Retail Payments</a> &gt; <span style="color: #0056b3;"><strong>SoftPos</strong></span></p>
+                            <p class="h1 display-26 display-sm-20 display-lg-20 display-xl-16 mb-2-9 mb-0" style="font-weight:normal; color: #002e5b; font-size: 3rem;">
+                                SoftPos 
+                            </p>
+                            <div class="fs-20 mt-3" style="line-height:normal !important; color: #002e5b; font-weight: bold; font-size: 1.5rem;">
+                                Transforms everyday devices into secure payment tools.📱 
+                            </div>
 						</div>
 
 						<div class="col-xl-5 col-md-12 text-center">
                             <!-- Placeholder image representing Mobile POS/SoftPos -->
-							<img src="../asset/img/softpos/softpos.png" alt="SoftPos Mobile Payment" border="0" style="border-radius:20px; border:5px solid #fff; max-width: 100%;">
+							<img src="../asset/img/softpos/softpos2.png" alt="SoftPos Mobile Payment" border="0" style="border-radius:20px; border:5px solid #fff; max-width: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
 						</div>
 					</div>
 				</div>
-				<div>
-					<h4 class="mb-3"><span style="font-family:roboto-bold; color: #0033a0; border-bottom: 3px solid #f7b600; padding-bottom: 5px;">What is SoftPos?</span></h4>
-					<p align="left" class="fs-6 text-muted mb-5">
+				<div style="margin-top:45px;">
+					<h3 style="margin-bottom: 20px;"><span style="font-weight: bold; color: #18455d;">What is SoftPos?</span></h3>
+					<p style="text-align: left; font-size: 16px; line-height: 1.7; color: #444;">
                         Tired of deciding? <strong>SoftPos</strong> is here to help. It's an innovative payment solution designed to help you accept digital and card payments securely and conveniently. Whether in-store or on-the-go, SoftPos will make sure you can accept payments anytime anywhere. No machine, no stress, just your phone.
                     </p>
 
                     <!-- Key Features Section (Compact & Horizontal Layout) -->
-                    <div class="row mt-4 pt-3">
-                        <div class="col-12 mb-4">
-                            <h2 class="fw-bold" style="color: #0033a0; font-size: 26px;">Key Features</h2>
-                            <p class="text-muted fs-6">Everything you need, built right into your smartphone</p>
+                    <div class="row flex-row-eq-height" style="margin-top: 60px; padding-top: 20px;">
+                        <div class="col-12 text-center mb-5">
+                            <h2 style="font-weight: bold; color: #18455d;">Key Features</h2>
+                            <p style="font-size: 18px; color: #6c757d;">Everything you need, built right into your smartphone</p>
                         </div>
                         
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card feature-card h-100 border-0 bg-light p-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #0033a0; color: #fff; width: 42px; height: 42px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-4z"></path><path d="M9 12h.01"></path><path d="M15 12h.01"></path><path d="M12 9v6"></path></svg>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #19338f;">Contactless tap to pay</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Accepts AMEX, Diners Club, Discover and digital wallets in one simple tap.</p>
-                                    </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card feature-card">
+                                <div class="icon-box" style="background-color: #e0f2fe; color: #0284c7;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-4z"></path><path d="M9 12h.01"></path><path d="M15 12h.01"></path><path d="M12 9v6"></path></svg>
                                 </div>
+                                <h4 style="font-weight: bold; color: #333; font-size: 18px; margin-bottom: 10px;">Contactless tap to pay</h4>
+                                <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Accepts AMEX, Diners Club, Discover and digital wallets in one simple tap.</p>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card feature-card h-100 border-0 bg-light p-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #0033a0; color: #fff; width: 42px; height: 42px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #19338f;">Consumer-presented</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Customers display their QR codes on their devices, and the merchant scans to collect.</p>
-                                    </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card feature-card">
+                                <div class="icon-box" style="background-color: #dbeafe; color: #2563eb;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
                                 </div>
+                                <h4 style="font-weight: bold; color: #333; font-size: 18px; margin-bottom: 10px;">Consumer-presented</h4>
+                                <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Customers display their QR codes on their devices, and the merchant scans to collect.</p>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card feature-card h-100 border-0 bg-light p-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #0033a0; color: #fff; width: 42px; height: 42px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="3"></rect><rect x="14" y="7" width="3" height="3"></rect><rect x="7" y="14" width="3" height="3"></rect><rect x="14" y="14" width="3" height="3"></rect></svg>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #19338f;">Merchant-presented</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Merchants generate a QR code and present it to the customer for scanning.</p>
-                                    </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card feature-card">
+                                <div class="icon-box" style="background-color: #f3e8ff; color: #9333ea;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="3"></rect><rect x="14" y="7" width="3" height="3"></rect><rect x="7" y="14" width="3" height="3"></rect><rect x="14" y="14" width="3" height="3"></rect></svg>
                                 </div>
+                                <h4 style="font-weight: bold; color: #333; font-size: 18px; margin-bottom: 10px;">Merchant-presented</h4>
+                                <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Merchants generate a QR code and present it to the customer for scanning.</p>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card feature-card h-100 border-0 bg-light p-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #0033a0; color: #fff; width: 42px; height: 42px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M8 6v12M16 6v12M4 10v4M20 10v4"></path></svg>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #19338f;">AppPay Terminal Code</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Customers scan the terminal code or QR to make payments on PayDollar.</p>
-                                    </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card feature-card">
+                                <div class="icon-box" style="background-color: #d1fae5; color: #059669;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M8 6v12M16 6v12M4 10v4M20 10v4"></path></svg>
                                 </div>
+                                <h4 style="font-weight: bold; color: #333; font-size: 18px; margin-bottom: 10px;">AppPay Terminal Code</h4>
+                                <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Customers scan the terminal code or QR to make payments on PayDollar.</p>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card feature-card h-100 border-0 bg-light p-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #0033a0; color: #fff; width: 42px; height: 42px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #19338f;">Dashboard</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Access to real-time sales monitoring and transaction history analytics.</p>
-                                    </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card feature-card">
+                                <div class="icon-box" style="background-color: #ffedd5; color: #ea580c;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
                                 </div>
+                                <h4 style="font-weight: bold; color: #333; font-size: 18px; margin-bottom: 10px;">Dashboard</h4>
+                                <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Access to real-time sales monitoring and transaction history analytics.</p>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card feature-card h-100 border-0 bg-light p-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #0033a0; color: #fff; width: 42px; height: 42px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #19338f;">Digital receipts</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Receipts of successful payments can be instantly emailed to customers.</p>
-                                    </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card feature-card">
+                                <div class="icon-box" style="background-color: #fce7f3; color: #db2777;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                                 </div>
+                                <h4 style="font-weight: bold; color: #333; font-size: 18px; margin-bottom: 10px;">Digital receipts</h4>
+                                <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Receipts of successful payments can be instantly emailed to customers.</p>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card feature-card h-100 border-0 bg-light p-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #0033a0; color: #fff; width: 42px; height: 42px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #19338f;">Accept payment voids</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Merchants have full control and can easily null or void a payment when necessary.</p>
-                                    </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card feature-card">
+                                <div class="icon-box" style="background-color: #fee2e2; color: #dc2626;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
                                 </div>
+                                <h4 style="font-weight: bold; color: #333; font-size: 18px; margin-bottom: 10px;">Accept payment voids</h4>
+                                <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Merchants have full control and can easily null or void a payment when necessary.</p>
                             </div>
                         </div>
                         
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card feature-card h-100 border-0 bg-light p-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #0033a0; color: #fff; width: 42px; height: 42px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #19338f;">Multi-lingual options</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Our system is highly adaptable and is available in multiple languages.</p>
-                                    </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card feature-card">
+                                <div class="icon-box" style="background-color: #ccfbf1; color: #0d9488;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                                 </div>
+                                <h4 style="font-weight: bold; color: #333; font-size: 18px; margin-bottom: 10px;">Multi-lingual options</h4>
+                                <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Our system is highly adaptable and is available in multiple languages.</p>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4 mb-3">
-                            <div class="card feature-card h-100 border-0 bg-light p-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #0033a0; color: #fff; width: 42px; height: 42px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #19338f;">Security</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Our system is robust, backed by PCI-DSS Level 1 certified tokenization technology.</p>
-                                    </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card feature-card">
+                                <div class="icon-box" style="background-color: #f1f5f9; color: #475569;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
                                 </div>
+                                <h4 style="font-weight: bold; color: #333; font-size: 18px; margin-bottom: 10px;">Security</h4>
+                                <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Our system is robust, backed by PCI-DSS Level 1 certified tokenization technology.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Key Benefits Section (Compact) -->
-                    <div class="row mt-4 pt-3">
-                        <div class="col-12 mb-3">
-                            <h2 class="fw-bold" style="color: #f7b600; font-size: 24px;">Key Benefits</h2>
+                    <div class="row flex-row-eq-height" style="margin-top: 40px; padding-top: 20px;">
+                        <div class="col-12 text-center mb-5">
+                            <h2 style="font-weight: bold; color: #18455d;">Key Benefits</h2>
                         </div>
                         
-                        <div class="col-md-4 mb-3">
-                            <div class="card feature-card h-100 border-0 p-3" style="background: #ffffff; border: 1px solid #eef2fb !important; border-top: 3px solid #f7b600 !important;">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle" style="background-color: #fff9e6; color: #f7b600; width: 40px; height: 40px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card" style="background: #ffffff; border: 1px solid #f1f3f5 !important; border-top: 4px solid #ffc107 !important;">
+                                <div class="text-center" style="margin-bottom: 15px;">
+                                    <div class="icon-box" style="background-color: #fff9e6; color: #ffc107; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
                                     </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #0033a0;">Drive Sales &amp; Revenue</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Reduce wait times by enabling quick payment processes anywhere in the store or on the move.</p>
-                                    </div>
+                                    <h4 style="font-weight: bold; color: #007bff; text-align: center; font-size: 18px;">Drive Sales &amp; Revenue</h4>
+                                    <p style="color: #6c757d; text-align: center; font-size: 15px; line-height: 1.5;">Reduce wait times by enabling quick payment processes anywhere in the store or on the move.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-3">
-                            <div class="card feature-card h-100 border-0 p-3" style="background: #ffffff; border: 1px solid #eef2fb !important; border-top: 3px solid #f7b600 !important;">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle" style="background-color: #fff9e6; color: #f7b600; width: 40px; height: 40px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card" style="background: #ffffff; border: 1px solid #f1f3f5 !important; border-top: 4px solid #ffc107 !important;">
+                                <div class="text-center" style="margin-bottom: 15px;">
+                                    <div class="icon-box" style="background-color: #fff9e6; color: #ffc107; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                                     </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #0033a0;">Reliable and Secure</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Built on secure firmware, fully compliant with international payment security standards.</p>
-                                    </div>
+                                    <h4 style="font-weight: bold; color: #007bff; text-align: center; font-size: 18px;">Reliable and Secure</h4>
+                                    <p style="color: #6c757d; text-align: center; font-size: 15px; line-height: 1.5;">Built on secure firmware, fully compliant with international payment security standards.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-3">
-                            <div class="card feature-card h-100 border-0 p-3" style="background: #ffffff; border: 1px solid #eef2fb !important; border-top: 3px solid #f7b600 !important;">
-                                <div class="d-flex align-items-start">
-                                    <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle" style="background-color: #fff9e6; color: #f7b600; width: 40px; height: 40px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        <div class="col-md-4 mb-4">
+                            <div class="card feature-card" style="background: #ffffff; border: 1px solid #f1f3f5 !important; border-top: 4px solid #ffc107 !important;">
+                                <div class="text-center" style="margin-bottom: 15px;">
+                                    <div class="icon-box" style="background-color: #fff9e6; color: #ffc107; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                                     </div>
-                                    <div class="ms-3">
-                                        <h6 class="fw-bold mb-1" style="color: #0033a0; font-size: 15px;">Easy Installation</h6>
-                                        <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Start accepting payments quickly. Download the app, install, and create your account.</p>
-                                    </div>
+                                    <h4 style="font-weight: bold; color: #007bff; text-align: center; font-size: 18px;">Easy Installation</h4>
+                                    <p style="color: #6c757d; text-align: center; font-size: 15px; line-height: 1.5;">Start accepting payments quickly. Download the app, install, and create your account.</p>
                                 </div>
                             </div>
                         </div>
@@ -522,52 +510,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <!-- Value Added Services Block (Compact) -->
                     <div class="row mt-4 pt-3">
-                        <div class="col-12 mb-3">
-                            <h2 class="fw-bold" style="color: #0033a0; font-size: 24px;">Value-Added Services</h2>
+                        <div class="col-12 text-center mb-5">
+                            <h2 style="font-weight: bold; color: #18455d;">Value-Added Services</h2>
                         </div>
                         
-                        <div class="col-md-4 mb-3">
-                            <div class="d-flex align-items-start">
-                                <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #e6f0ff; color: #0033a0; width: 40px; height: 40px;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                        <div class="col-md-4 mb-4">
+                            <div style="display: flex; align-items: flex-start; padding: 20px; border-radius: 12px; background-color: #f8f9fa;">
+                                <div class="icon-box" style="background-color: #e6f0ff; color: #0056b3; width: 48px; height: 48px; min-width: 48px; margin-bottom: 0; margin-right: 15px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
                                 </div>
-                                <div class="ms-3">
-                                    <h6 class="fw-bold mb-1" style="color: #19338f; font-size: 14px;">Asian Payment Options</h6>
-                                    <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Includes WeChat Pay, Alipay+, and UnionPay support with QR code payment generation.</p>
+                                <div>
+                                    <h5 style="font-weight: bold; color: #333; margin-top: 0; margin-bottom: 5px; font-size: 16px;">Asian Payment Options</h5>
+                                    <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Includes WeChat Pay, Alipay+, and UnionPay support with QR code payment generation.</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="col-md-4 mb-3">
-                            <div class="d-flex align-items-start">
-                                <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #e6f0ff; color: #0033a0; width: 40px; height: 40px;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        <div class="col-md-4 mb-4">
+                            <div style="display: flex; align-items: flex-start; padding: 20px; border-radius: 12px; background-color: #f8f9fa;">
+                                <div class="icon-box" style="background-color: #e6f0ff; color: #0056b3; width: 48px; height: 48px; min-width: 48px; margin-bottom: 0; margin-right: 15px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
                                 </div>
-                                <div class="ms-3">
-                                    <h6 class="fw-bold mb-1" style="color: #19338f; font-size: 14px;">Smart Fraud Prevention</h6>
-                                    <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Enhanced security via real-time audio confirmation (Soundbox) features.</p>
+                                <div>
+                                    <h5 style="font-weight: bold; color: #333; margin-top: 0; margin-bottom: 5px; font-size: 16px;">Smart Fraud Prevention</h5>
+                                    <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Enhanced security via real-time audio confirmation (Soundbox) features.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-3">
-                            <div class="d-flex align-items-start">
-                                <div class="shadow-sm flex-shrink-0 d-flex align-items-center justify-content-center rounded-3" style="background-color: #e6f0ff; color: #0033a0; width: 40px; height: 40px;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        <div class="col-md-4 mb-4">
+                            <div style="display: flex; align-items: flex-start; padding: 20px; border-radius: 12px; background-color: #f8f9fa;">
+                                <div class="icon-box" style="background-color: #e6f0ff; color: #0056b3; width: 48px; height: 48px; min-width: 48px; margin-bottom: 0; margin-right: 15px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
                                 </div>
-                                <div class="ms-3">
-                                    <h6 class="fw-bold mb-1" style="color: #19338f; font-size: 14px;">Real-time DCC</h6>
-                                    <p class="text-muted mb-0 fs-6" style="line-height: 1.4;">Dynamic Currency Conversion fetches live exchange rates for international customers.</p>
+                                <div>
+                                    <h5 style="font-weight: bold; color: #333; margin-top: 0; margin-bottom: 5px; font-size: 16px;">Real-time DCC</h5>
+                                    <p style="color: #6c757d; margin-bottom: 0; font-size: 15px; line-height: 1.5;">Dynamic Currency Conversion fetches live exchange rates for international customers.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- CTA -->
-					<div class="text-center mt-5 py-5 px-3 rounded-4" style="background-color: #0033a0; color: white;">
-                        <h3 class="fw-bold text-white mb-3">Start Accepting Payments Anywhere</h3>
-                        <p class="fs-5 mb-4 opacity-75">No machine, no stress. Turn your smartphone into a full-featured POS today.</p>
-                        <a href="mailto:sales@paydollar.com" class="btn btn-lg px-5 py-3 rounded-pill fw-bold shadow" style="background-color: #f7b600; color: #0033a0;">Contact Sales to Enable SoftPos</a>
+					<div class="text-center mt-5 py-5 px-3 rounded-4" style="background-color: #002e5b; color: white; border-radius: 20px;">
+                        <h3 class="fw-bold text-white mb-3" style="font-size: 28px;">🚀 Start Accepting Payments Anywhere</h3>
+                        <p class="mb-4 opacity-75" style="font-size: 18px;">No machine, no stress. Turn your smartphone into a full-featured POS today.</p>
+                        <a href="mailto:sales@paydollar.com" class="btn btn-lg px-5 py-3 rounded-pill fw-bold shadow" style="background-color: #ffffff; color: #002e5b; transition: all 0.3s ease;">Contact Sales to Enable SoftPos</a>
                     </div>
 					
 			    </div>
@@ -702,9 +690,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 
     var owlCarousel = $('.owl-carousel').data('owl.carousel');
-    owlCarousel.remove(1);
+    // Check if owlCarousel exists before calling remove to prevent errors if the carousel isn't on the page
+    if (owlCarousel) {
+        owlCarousel.remove(1);
+    }
 </script>
 
-<script>includeHTML();</script>
+<script>
+    // Check if includeHTML is defined before calling it
+    if (typeof includeHTML === "function") {
+        includeHTML();
+    }
+</script>
 </body>
 </html>
