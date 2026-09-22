@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +7,8 @@
     <meta charset="utf-8">
     <meta name="author" content="Website Design Templates">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=390, initial-scale=1.0, maximum-scale=1.0">
+    <!-- แก้ไข width จาก 390 เป็น device-width เพื่อให้รองรับทุกหน้าจอ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta name="description" content="From enabling merchants to customize their payment pages to  powering real-time currency conversions, PayDollar offers value-added services beyond payments.">
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -66,10 +65,10 @@ src="https://www.facebook.com/tr?id=338242285739795&ev=PageView&noscript=1"
     <link rel="stylesheet" href="../asset/css/plugins.css">
 
     <!-- search css -->
-    <link rel="stylesheet" href="../asset/search/search.css">
+    <link rel="stylesheet" href="https://www.paydollar.com/asset/search/search.css">
 
     <!-- quform css -->
-    <link rel="stylesheet" href="../asset/quform/css/base.css">
+    <link rel="stylesheet" href="https://www.paydollar.com/asset/quform/css/base.css">
 
     <!-- theme core css -->
     <link rel="stylesheet" href="../asset/css/styles.css">
@@ -105,7 +104,7 @@ src="https://www.facebook.com/tr?id=338242285739795&ev=PageView&noscript=1"
 			}
 	</style>
 
-
+<script src="../asset/js/jquery.min.js"></script>
 <script>
 	jQuery(".dropdown-item").on("click", function() {
 	jQuery(this).attr("aria-selected", "true");
@@ -144,7 +143,6 @@ $('.btn-toggle-fade').on('click', function() {
 });
 </script>
 
-
 </head>
 
 <body>
@@ -164,7 +162,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         ================================================== -->
         <header class="header-style2" style="z-index:99 !important;" >
 		
-	  	<div class="top-bar">
+	 	<div class="top-bar">
                 <div class="container px-lg-1-6 px-xl-2-5 px-xxl-2-9 py-1 mb-0">
                     <div class="row pb-0 mb-0">
                         <div class="col-12  pb-0 mb-0">
@@ -180,7 +178,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										</ul>
 									</div>
 								</li>
-								<li class="border-start"><button class="btn btn-light btn-link"  onclick="window.location.href='../tc/value-added-services.html';"  type="button">中文繁體</li>
+                                <!-- แก้ไข: เพิ่ม </button> ก่อนปิด <li> -->
+								<li class="border-start"><button class="btn btn-light btn-link"  onclick="window.location.href='../tc/value-added-services.html';"  type="button">中文繁體</button></li>
 							</ul>
                         </div>
                     </div>
@@ -212,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 											<div id="nav-content_ver" tabindex="0">
 												<div class="sidenav" >
-													<a href="#contact" class="dropdown-btn" style="padding-top: 30px;">Services &amp; Solutions <i class="fa fa-caret-down"></i></a>
+													<a href="value-added-services.html#contact" class="dropdown-btn" style="padding-top: 30px;">Services &amp; Solutions <i class="fa fa-caret-down"></i></a>
 													<div class="dropdown-container">
 														<a rel="noopener noreferrer" href="online-payments.html">Online Payments</a>
 														<a rel="noopener noreferrer" href="retail-payments.html">Retail Payments</a>
@@ -223,7 +222,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 													<a rel="noopener noreferrer" href="industries.html">Industries</a>
 													<a rel="noopener noreferrer" href="resources.html">Resources</a>
-													<a href="#contact" class="dropdown-btn">About<i class="fa fa-caret-down"></i></a>
+													<a href="value-added-services.html#contact" class="dropdown-btn">About<i class="fa fa-caret-down"></i></a>
 													<div class="dropdown-container">
 														<a rel="noopener noreferrer" href="about-us.html">About Us</a>
 														<a rel="noopener noreferrer" href="contact-us.html">Contact Us</a>
@@ -239,7 +238,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <!-- start menu area -->
                                     <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
 										<li>
-                                            <a rel="noopener noreferrer" href="#!">Services &amp; Solutions</a>
+                                            <a rel="noopener noreferrer" href="value-added-services.html#!">Services &amp; Solutions</a>
                                             <ul class="row megamenu">
                                                 <li class="col-lg-3 d-none d-lg-block" style="border-right:1px solid #c1c1c1;">
                                                     <span class="mb-0 d-block p-lg-0 px-4 px-lg-0 text-uppercase sub-title  display-30">
@@ -277,7 +276,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             <a rel="noopener noreferrer" href="resources.html">Resources</a>
                                         </li>
 										<li>
-                                            <a rel="noopener noreferrer" href="#!">About</a>
+                                            <a rel="noopener noreferrer" href="value-added-services.html#!">About</a>
                                             <ul class="row megamenu">
                                                 <li class="col-lg-4 d-none d-lg-block" style="border-right:1px solid #c1c1c1;">
                                                     <span class="mb-0 d-block p-lg-0 px-4 px-lg-0 text-uppercase sub-title  display-30">
@@ -328,9 +327,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<p class="h1 display-26 display-sm-20 display-lg-20 display-xl-16 mb-2-9 fc-ap-blue mb-0 ff-poppins-bold fc-ap-blue">
 								Unleash Potential with our Services. Drive Your Business Growth!
 							</p>
-							<font class="fs-16 fw-0 poppins-medium">
+							<span class="fs-16 fw-0 poppins-medium">
 								Keep up with the technology changes and your consumer expectations.
-							</font>
+							</span>
 						</div>
 						
 						<!--<div class="col-xl-6 col-md-12">
@@ -343,43 +342,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>-->
 						
 						<div class="col-xl-6 col-md-12">
-    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <!-- 1. ส่วนจุดบอกตำแหน่ง (Indicators) - เพิ่มลำดับที่ 3 (สไลด์ที่ 4) -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
+							<div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+									<button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+									<button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <!-- แก้ไข: เปลี่ยน data-bs-slide-to="3" เป็น "4" -->
+									<button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="4" aria-label="Slide 5"></button>
+								</div>
+								<div class="carousel-inner banner rounded-4 border border-white border-4">
+									<div class="carousel-item active" data-bs-interval="4000" onclick="window.location.href='voicepay.html'">
+										<img src="../asset/img/service/voicepay.webp" border="0">
+									</div>
+                                    <!-- แก้ไข: เอา class active อันที่ 2 ออกเพื่อไม่ให้บัค -->
+									<div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='insertpass.html'">
+										<img src="../asset/img/service/insertpass.webp" border="0">
+									</div>
+									<div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='tokenization.html'">
+										<img src="../asset/img/service/card_tokenization.webp" border="0">
+									</div>
+									<div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='value-added-services.html?openModal=InstalmentPayment'" >
+										<img src="../asset/img/service/instalment.webp" border="0">
+									</div>
+									<div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='handsin.html'" >
+										<img src="../asset/img/service/handsin.webp" border="0">
+									</div>
 
-        <!-- 2. ส่วนเนื้อหาภาพสไลด์ (Carousel Inner) -->
-        <div class="carousel-inner banner rounded-4 border border-white border-4">
-            <div class="carousel-item active" data-bs-interval="4000" onclick="window.location.href='tokenization.html'">
-                <img src="../asset/img/service/card_tokenization.webp" border="0">
-            </div>
-            <div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='value-added-services.html?openModal=InstalmentPayment'">
-                <img src="../asset/img/service/instalment.webp" border="0">
-            </div>
-            <div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='handsin.html'">
-                <img src="../asset/img/service/handsin.webp" border="0">
-            </div>
-            <!-- เพิ่มหน้าที่ 4 ตรงนี้ -->
-            <div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='insertpass.html'">
-                <img src="../asset/img/service/insertpass.png" border="0">
-            </div>
-        </div>
-
-        <!-- 3. ปุ่มกด ย้อนกลับ-ถัดไป -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+									  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									  <span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+									  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+									  <span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
 						
 					</div>
 				</div>
@@ -402,8 +402,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="container">
 				<div class="horizontaltab tab-style2" id="tabs">
 					<ul class="resp-tabs-list hor_1 tab-custom1 text-center">
-						<li class="rounded-top" id="card">Card-Specific Services</li>
-						<li class="rounded-top" id="general">General Services</li>
+                        <!-- แก้ไข: เปลี่ยน ID ให้ไม่ซ้ำกับ div ด้านล่าง -->
+						<li class="rounded-top" id="tab-card">Card-Specific Services</li>
+						<li class="rounded-top" id="tab-general">General Services</li>
 					</ul>
 					<div class="resp-tabs-container hor_1 p-0">
 						
@@ -413,102 +414,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div id="card">
 							<div class="container pb-5">
 								<div class="row g-xl-5 mt-n2-2">
-									
-									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='voicepay.html'">
+								
+									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='tokenization.html'">
 										<article class="card card-style-04 h-100">
 											<div class="blog-img position-relative overflow-hidden">
-												<img src="../asset/img/service/voicepay.png" alt="">
+												<img src="../asset/img/service/card_tokenization.webp" alt="">
 											</div>
 											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
-												<img src="../asset/img/icon/voicepay.svg">
+												<img src="https://www.asiapay.com/images/service/icon_tokenization.svg">
 											</div>
 											<div class="card-body p-1-9 pt-0 mt-d25">
 												<div class="text-primary d-block mt-0 pt-0">Card-Specific Services</div>
-												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Voice Pay</h4>
-												<p>Innovative Payment Solution Enabling Secure, Contactless Voice-Activated Transactions</p>
+												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Card Tokenization</h4>
+												<p>Boost Conversions with Seamless, Secure Checkout Payment</p>
 											</div>
 										</article>
 									</div>
 									
-									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='visa_passkey.html'">
+									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='click-to-pay.html'">
 										<article class="card card-style-04 h-100">
 											<div class="blog-img position-relative overflow-hidden">
-												<img src="../asset/img/service/visa_passkey.png" alt="">
+												<img src="../asset/img/service/click-to-pay.webp" alt="">
 											</div>
 											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
-												<img src="../asset/img/icon/authentication.svg">
+												<img src="../asset/img/icon/icon_fast_checkout.svg">
 											</div>
 											<div class="card-body p-1-9 pt-0 mt-d25">
 												<div class="text-primary d-block mt-0 pt-0">Card-Specific Services</div>
-												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Visa Passkey</h4>
-												<p>An Advanced Authentication Solution for Card Payment</p>
-											</div>
-										</article>
-									</div>  
-									
-									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" data-bs-toggle="modal" data-bs-target="#MarketingToolsModal">
-    <article class="card card-style-04 h-100">
-        <div class="blog-img position-relative overflow-hidden">
-            <img src="../asset/img/service/marketingtools.png" alt="">
-        </div>
-        <div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
-            <img src="../asset/img/icon/AI.svg">
-        </div>
-        <div class="card-body p-1-9 pt-0 mt-d25">
-            <div class="text-primary d-block mt-0 pt-0">Card-Specific Services</div>
-            <h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Digital Marketing+Payment Solutions</h4>
-            <p>AI-Powered Tools for Smarter Campaigns and Influencer Management</p>
-            
-            <div class="modal fade" id="MarketingToolsModal" tabindex="-1" aria-labelledby="MarketingToolsModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="MarketingToolsModalLabel">Select a Marketing Tool</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center">
-                            <p class="mb-4">Please choose the digital marketing solution you want to explore:</p>
-                            
-                            <div class="row justify-content-center align-items-stretch">
-                                
-                                <div class="col-6 col-md-5 mb-3">
-                                    <a href="marketing-tools-optadeasy.html" class="d-flex flex-column align-items-center justify-content-center text-decoration-none p-4 border rounded h-100" style="transition: all 0.3s ease;">
-                                        <img src="../asset/img/marketingtools/optadeasy.svg" alt="OptAdeasy" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
-                                        <h5 class="fc-ap-blue ff-poppins-bold fs-18 mb-0">OptAdeasy</h5>
-                                    </a>
-                                </div>
-                                
-                                <div class="col-6 col-md-5 mb-3">
-                                    <a href="marketing-tools-koolerai.html" class="d-flex flex-column align-items-center justify-content-center text-decoration-none p-4 border rounded h-100" style="transition: all 0.3s ease;">
-                                        <img src="../asset/img/marketingtools/koolerai.svg" alt="KOOLER AI" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
-                                        <h5 class="fc-ap-blue ff-poppins-bold fs-18 mb-0">KOOLER AI</h5>
-                                    </a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-    </article>
-</div>
-									
-									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='insertpass.html'">
-										<article class="card card-style-04 h-100">
-											<div class="blog-img position-relative overflow-hidden">
-												<img src="../asset/img/service/insertpass.png" alt="">
-											</div>
-											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
-												<img src="../asset/img/icon/ticketing.svg">
-											</div>
-											<div class="card-body p-1-9 pt-0 mt-d25">
-												<div class="text-primary d-block mt-0 pt-0">Card-Specific Services</div>
-												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">InsertPass</h4>
-												<p>Save Your Pass After Purchase. One Click Away.</p>
+												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Click To Pay</h4>
+												<p>No Passwords. New Checkout Experience</p>
 											</div>
 										</article>
 									</div>
@@ -524,34 +458,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											<div class="card-body p-1-9 pt-0 mt-d25">
 												<div class="text-primary d-block mt-0 pt-0">Card-Specific Services</div>
 												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Split Payment</h4>
-												<p>Advanced Authentication Solution for Card Payment</p>
+												<p>Split payments across cards and for groups</p>
 											</div>
 										</article>
 									</div>
-									
-									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='refund-protect.html'">
-										<article class="card card-style-04 h-100">
-											<div class="blog-img position-relative overflow-hidden">
-												<img src="../asset/img/service/refund_protect.webp" alt="">
-											</div>
-											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
-												<img src="../asset/img/icon/refundprotect.svg">
-											</div>
-											<div class="card-body p-1-9 pt-0 mt-d25">
-												<div class="text-primary d-block mt-0 pt-0">General Service</div>
-												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Refund Protect</h4>
-												<p>Robust revenue protection and seamless customer reassurance</p>
-											</div>
-										</article>
-									</div>
-									
-									
-									
-									
-
-									
-									
-									
 									
 									
 									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" data-bs-toggle="modal" data-bs-target="#InstalmentPayment">
@@ -606,38 +516,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														</div>
 													</div>
 												<!-- End Modal -->
-											</div>
-										</article>
-									</div>
-									
-									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='tokenization.html'">
-										<article class="card card-style-04 h-100">
-											<div class="blog-img position-relative overflow-hidden">
-												<img src="../asset/img/service/card_tokenization.webp" alt="">
-											</div>
-											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
-												<img src="https://www.asiapay.com/images/service/icon_tokenization.svg">
-											</div>
-											<div class="card-body p-1-9 pt-0 mt-d25">
-												<div class="text-primary d-block mt-0 pt-0">Card-Specific Services</div>
-												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Card Tokenization</h4>
-												<p>Boost Conversions with Seamless, Secure Checkout Payment</p>
-											</div>
-										</article>
-									</div>
-									
-									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='click-to-pay.html'">
-										<article class="card card-style-04 h-100">
-											<div class="blog-img position-relative overflow-hidden">
-												<img src="../asset/img/service/click-to-pay.webp" alt="">
-											</div>
-											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
-												<img src="../asset/img/icon/icon_fast_checkout.svg">
-											</div>
-											<div class="card-body p-1-9 pt-0 mt-d25">
-												<div class="text-primary d-block mt-0 pt-0">Card-Specific Services</div>
-												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Click To Pay</h4>
-												<p>No Passwords. New Checkout Experience</p>
 											</div>
 										</article>
 									</div>
@@ -756,14 +634,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										</article>
 									</div>
 									
-									
-									
-									
-
-
-									
-
-									
 								</div>
 							
 							</div>
@@ -774,15 +644,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div id="general">
 							<div class="container pb-5">
 							
-								
-							
-							
 								<div class="row g-xl-5 mt-n2-2">
 								
+								<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='voicepay.html'">
+										<article class="card card-style-04 h-100">
+											<div class="blog-img position-relative overflow-hidden">
+												<img src="../asset/img/service/voicepay.webp" alt="">
+											</div>
+											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
+												<img src="../asset/img/icon/voicepay.svg">
+											</div>
+											<div class="card-body p-1-9 pt-0 mt-d25">
+												<div class="text-primary d-block mt-0 pt-0">General Service</div>
+												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Voice Pay</h4>
+												<p>Secure, frictionless payments powered by AI voice recognition</p>
+											</div>
+										</article>
+									</div>
+									
+									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='insertpass.html'">
+										<article class="card card-style-04 h-100">
+											<div class="blog-img position-relative overflow-hidden">
+												<img src="../asset/img/service/insertpass.webp" alt="">
+											</div>
+											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
+												<img src="../asset/img/icon/insertpass.svg">
+											</div>
+											<div class="card-body p-1-9 pt-0 mt-d25">
+												<div class="text-primary d-block mt-0 pt-0">General Service</div>
+												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">InsertPass</h4>
+												<p>Help Businesses Create and Deliver Digital Passes and Vouchers with Ease</p>
+											</div>
+										</article>
+									</div>
+								
 									
 									
-									
-									
+									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='refund-protect.html'">
+										<article class="card card-style-04 h-100">
+											<div class="blog-img position-relative overflow-hidden">
+												<img src="../asset/img/service/refund_protect.webp" alt="">
+											</div>
+											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
+												<img src="https://www.asiapay.com/images/service/icon-refund-protect.svg">
+											</div>
+											<div class="card-body p-1-9 pt-0 mt-d25">
+												<div class="text-primary d-block mt-0 pt-0">General Service</div>
+												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Refund Protect</h4>
+												<p>Robust revenue protection and seamless customer reassurance</p>
+											</div>
+										</article>
+									</div>
 								
 								
 									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" data-bs-toggle="modal" data-bs-target="#BatchPayment">
@@ -820,13 +732,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 																</div>
 																
-																
-
-
-
-																
-																
-																
 															</div>
 														</div>
 													</div>
@@ -855,7 +760,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														<div class="modal-dialog modal-dialog-centered modal-lg">
 															<div class="modal-content">
 																<div class="modal-header">
-																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Customized Payment Page</h5>
+																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Customized Payment Page</h4>
 																	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 																</div>
 																<div class="modal-body">
@@ -900,7 +805,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														<div class="modal-dialog modal-dialog-centered modal-lg">
 															<div class="modal-content">
 																<div class="modal-header">
-																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Event Payment</h5>
+																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Event Payment</h4>
 																	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 																</div>
 																<div class="modal-body">
@@ -942,7 +847,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														<div class="modal-dialog modal-dialog-centered modal-lg">
 															<div class="modal-content">
 																<div class="modal-header">
-																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Member Payment</h5>
+																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Member Payment</h4>
 																	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 																</div>
 																<div class="modal-body">
@@ -994,7 +899,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														<div class="modal-dialog modal-dialog-centered modal-lg">
 															<div class="modal-content">
 																<div class="modal-header">
-																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Multi-Currency Conversion</h5>
+																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Multi-Currency Conversion</h4>
 																	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 																</div>
 																<div class="modal-body">
@@ -1041,7 +946,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														<div class="modal-dialog modal-dialog-centered modal-lg">
 															<div class="modal-content">
 																<div class="modal-header">
-																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">PayBooth</h5>
+																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">PayBooth</h4>
 																	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 																</div>
 																<div class="modal-body">
@@ -1084,7 +989,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														<div class="modal-dialog modal-dialog-centered modal-lg">
 															<div class="modal-content">
 																<div class="modal-header">
-																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Payment Link / QR Code</h5>
+																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Payment Link / QR Code</h4>
 																	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 																</div>
 																<div class="modal-body">
@@ -1144,7 +1049,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														<div class="modal-dialog modal-dialog-centered modal-lg">
 															<div class="modal-content">
 																<div class="modal-header">
-																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Recurring Payment</h5>
+																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Recurring Payment</h4>
 																	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 																</div>
 																<div class="modal-body">
@@ -1204,7 +1109,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														<div class="modal-dialog modal-dialog-centered modal-lg">
 															<div class="modal-content">
 																<div class="modal-header">
-																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Voucher Payment</h5>
+																	<h4 class="modal-title fc-ap-blue display-24 display-sm-22 display-lg-22 display-xl-22 fc-ap-blue ff-poppins-bold" id="exampleModalLabel">Voucher Payment</h4>
 																	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 																</div>
 																<div class="modal-body">
@@ -1273,13 +1178,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="col-md-6 col-lg-4 mt-5">
                         <div class="ps-0">
-                            <h3 class="text-white h6 mb-1-9">Get in touch</h3>
+                            <h3 class="text-white h6 mb-1-6">Get in touch</h3>
                             <ul class="footer-link list-unstyled">
                                 <li class="text-white mb-3 fs-12 opacity6">
                                     We are here to reach your goals. Contact us now and a specialist will be in touch asap.
                                 </li>
                                 <li class="text-white mb-3 fs-12">
-                                    <strong>Email:</strong> <a rel="noopener noreferrer" class="link-white" href="/cdn-cgi/l/email-protection#a5d6c4c9c0d6e5d5c4dcc1cac9c9c4d78bc6cac8"><span class="__cf_email__" data-cfemail="f281939e9781b282938b969d9e9e9380dc919d9f">[email&#160;protected]</span></a>
+                                    <strong>Email:</strong> <a rel="noopener noreferrer" class="link-white" href="https://www.paydollar.com/cdn-cgi/l/email-protection#a5d6c4c9c0d6e5d5c4dcc1cac9c9c4d78bc6cac8"><span class="__cf_email__" data-cfemail="f281939e9781b282938b969d9e9e9380dc919d9f">[email&#160;protected]</span></a>
                                 </li>
                                 <li class="text-white fs-12">
                                     <strong>Phone:</strong> <a rel="noopener noreferrer" class="link-white" href="tel:852 2538 8278">+852 2538 8278</a>
@@ -1330,8 +1235,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="row align-items-center">
                         <div class="col-8">
 							<p class="my-0">
-								<a rel="noopener noreferrer" class="link-light fs-11" href="terms-of-use.html">Terms of Use</a><font class="text-white opacity5">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
-								<a rel="noopener noreferrer" class="link-light fs-11" href="privacy-policy.html">Privacy Policy</a><font class=" text-white opacity5">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+								<a rel="noopener noreferrer" class="link-light fs-11" href="terms-of-use.html">Terms of Use</a><span class="text-white opacity5">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								<a rel="noopener noreferrer" class="link-light fs-11" href="privacy-policy.html">Privacy Policy</a><span class=" text-white opacity5">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
 								<a rel="noopener noreferrer" class="link-light fs-11" href="security-policy.html">Security Policy</a>
 							</p>
                             <p class="d-inline-block text-white mb-0 mt-0 p-0 fs-10 opacity6">&copy; <span class="current-year"></span> AsiaPay Limited</p>
@@ -1350,7 +1255,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- all js include start -->
 
     <!-- jQuery -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../asset/js/jquery.min.js"></script>
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!-- ลบ script src="../asset/js/jquery.min.js" ตรงนี้ออก เพราะเรียกใช้ไปแล้วด้านบนสุดที่แท็ก <head> (บรรทัดที่ 84) -->
 
     <!-- popper js -->
     <script src="../asset/js/popper.min.js"></script>
@@ -1401,7 +1307,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="../asset/js/custom.js"></script>
 	
 	<!-- owl index scripts  -->
-	<script src="../asset/owl/jquery-3.6.0.min.js"></script>
+    <!-- แก้ไข: ลบ script jQuery ของ owl ออกเพื่อไม่ให้ชนกับ jQuery ตัวบนสุด -->
+	<!-- <script src="../asset/owl/jquery-3.6.0.min.js"></script> -->
     <script src="../asset/owl/owl.carousel.min.js"></script>
     <script src="../asset/owl/script-content.js"></script>
 
@@ -1425,7 +1332,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Call the function on page load
   window.onload = openModalFromURLParams;
 </script>
-<script>
+
+<!-- แก้ไข: Comment ส่วนการรัน Owl Carousel ออก เพราะ HTML ที่ผูกกับ Owl ถูก Comment ทิ้งไปแล้ว (จะได้ไม่เกิด Error บนหน้าเว็บ) -->
+<!-- <script>
         $(".owl-carousel").owlCarousel({
   loop: true,
   nav: true,
@@ -1435,7 +1344,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 var owlCarousel = $('.owl-carousel').data('owl.carousel');
 owlCarousel.remove(1);
-    </script>
+    </script> -->
 
-<script>includeHTML();</script></body>
+<!-- หากหน้าเว็บไม่มีการเชื่อมฟังก์ชั่น includeHTML() ไว้ที่ไฟล์อื่น ให้ระวังบรรทัดนี้อาจแจ้งเตือน ReferenceError บน Console -->
+<!-- <script>includeHTML();</script> -->
+
+</body>
 </html>
